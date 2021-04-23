@@ -148,6 +148,7 @@ namespace PresentacionGui
             this.BntAcceder.TabIndex = 3;
             this.BntAcceder.Text = "ACCEDER";
             this.BntAcceder.UseVisualStyleBackColor = false;
+            this.BntAcceder.Click += new System.EventHandler(this.BntAcceder_Click);
             // 
             // LinkClave
             // 

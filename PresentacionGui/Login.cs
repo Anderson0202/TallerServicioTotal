@@ -92,5 +92,59 @@ namespace PresentacionGui
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void BntAcceder_Click(object sender, EventArgs e)
+        {
+            if (Vacio())
+            {
+                if (TxUsuario.Text.Equals("Admin02"))
+                {
+                    if (TxClave.Text.Equals("Clave02"))
+                    {
+                        new Principal().Show();
+                        this.Visible=false;
+                    }
+                    else
+                    {
+                        Mensaje("Clave Incorrecta - Intente nuevamente -");
+                    }
+                }
+                else
+                {
+                    Mensaje("Usuario Incorrecto  - Intente nuevamente -");
+                }
+            }
+
+        }
+
+        private bool Vacio()
+        {
+            try
+            {
+                if (TxUsuario.Text.Equals("USUARIO"))
+                {
+                    Mensaje("Ingrese el Usuario");
+                    return false;
+                }
+                else if (TxClave.Text.Equals("CLAVE"))
+                {
+                    Mensaje("Ingrese la Clave");
+                    return false;
+                }
+                return true;
+
+            }
+            catch (Exception e)
+            {
+
+                Mensaje("Ingrese usuario o clave" + e.Message);
+                return false;
+            }
+        }
+
+        public void Mensaje(string txt)
+        {
+            MessageBox.Show(txt, "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
