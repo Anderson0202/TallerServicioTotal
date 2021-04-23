@@ -117,4 +117,75 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAL3SURBVGhD7dhZyA5RHMfxx75nyZL1wg1lyXJhTYSsSZJSb1K4EFLWcivK7ka5VG5EktwgFy5E
+        WSIlsiXZy77vvr+af52mZ3mfMXNm6PzqU89z3plz/s/7nHnmnCmFhISEhPyPaY1+6Bu9/qcyGDtwH79j
+        7mE7BqGw6YmD+In4B4jTMQfQA4XKSDxCuaKreYjhKESG4B3cAi9iKfqgeUSvl+ES3GPfIvep1gUPYEV9
+        wSJUSxMsho6183TtdERu0UVtxXzDVDQ20/Eddv5W5JLu+AwrZAPqzSbY+R/RFd6zBFaELtpWqDe6t7g/
+        Eppy3nMUVsBONSTMHlg/R9TgO1dhBcxVQ8LMg/VzRQ2+8xRWwCg1JMwYWD9P1OA7d2EFTFZDwuiXzvq5
+        rQbfOQcrYLkaEmYFrJ+zavCd3bACTqohYU7D+tGC0nvGwwqQ0ag34+D2oevFe5rC/eW6jHr2HG0RP199
+        5hJd5L9gxRxHe9RKB5yAnac+JiDXaF5bQXITM1ApM3EL7jm5rbPcNIN7lzdatugb0t+O4Qzce4/R3Vx9
+        FCKa21pquNOsFu0St0HL+kJEi8V1eINyBVfzGmvRErlmKNw7vOsrXuJZ5FXUVu7YO9BOM5fMwXuUK2wf
+        tL2NpwX2o9w52i7PhtcsgPu0RDu9C857TZlhiGcEtEe3487jh/Ner+fDSybCnSKaNmOh3Z0+gLWr4C2Y
+        FNFr9xvUVNOeXyuE51GbaNeZ+R2+M7TUtkFVwABYNN0a81xL//lZsAzEC9jfH6MTMssu2GAfoKkSzzS4
+        HzZORU5BPHo2pn27HZfZAlLPpT7BBlqDStEyZTW0stWeXE5hFdqhUjbC+teH6o3Uo2WEDaJnWUkeNtRK
+        G2hFYONsRuq5ARtgpRoyir5JG+e6GtKMLkbrXBdzlg+fe8Fd6rg/Jn+dBljHPp50XIONt1ANacW9CA+p
+        IeMcho23Xg1pZS+sY61ys447np4NpJZu6B/RTTHraAwbT2OHhISEhBQxpdIf7fNPRgfbXqsAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <metadata name="lineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>330, 154, 322, 0</value>
+  </metadata>
+  <metadata name="lineShape2.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>330, 154</value>
+  </metadata>
+  <metadata name="lineShape2.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>322, 0</value>
+  </metadata>
+  <metadata name="lineShape1.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>329, 91, 322, 0</value>
+  </metadata>
+  <metadata name="lineShape1.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>329, 91</value>
+  </metadata>
+  <metadata name="lineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>322, 0</value>
+  </metadata>
+  <metadata name="lineShape1.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>329, 91, 322, 0</value>
+  </metadata>
+  <metadata name="lineShape1.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>329, 91</value>
+  </metadata>
+  <metadata name="lineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>322, 0</value>
+  </metadata>
+  <metadata name="lineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>330, 154, 322, 0</value>
+  </metadata>
+  <metadata name="lineShape2.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>330, 154</value>
+  </metadata>
+  <metadata name="lineShape2.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>322, 0</value>
+  </metadata>
+  <data name="BtnPbCerrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACOSURBVDhPzZJbCoMwFERDXZU2UMF+tnHddiu6hzgXTgKlTbAP0AMDYR73K+5YxBhPPIsUOwoa
+        6SFdsF5Q1kuTdbGeUeClRbphZeTdyTzWe6xAMR/RO43PWHWsyMCGn40TGlylGQ3Y2/npgAaBYYfsHYjr
+        WJFBh2XetiMqjBRbrIy8+hEFf/lI33/lnXBuBRK9zarRoUjRAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BtnPbMinimizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAoSURBVDhPYxgFwwr8///fAYgbiMQOUG0IABJEU4QPYxowCoYuYGAAACcEUrmhReLSAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
 </root>
