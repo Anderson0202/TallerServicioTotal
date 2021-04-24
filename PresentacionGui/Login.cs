@@ -13,9 +13,11 @@ namespace PresentacionGui
 {
     public partial class Login : Form
     {
+        Principal Principal;
         public Login()
         {
             InitializeComponent();
+            Principal = new Principal();
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -101,8 +103,8 @@ namespace PresentacionGui
                 {
                     if (TxClave.Text.Equals("Clave02"))
                     {
-                        new Principal().Show();
-                        this.Visible=false;
+                        Principal.Visible = true;
+                        this.Visible = false;
                     }
                     else
                     {
