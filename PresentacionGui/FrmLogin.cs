@@ -11,13 +11,13 @@ using System.Runtime.InteropServices;
 
 namespace PresentacionGui
 {
-    public partial class Login : Form
+    public partial class FrmLogin : Form
     {
-        Principal Principal;
-        public Login()
+        FrmPrincipal Principal;
+        public FrmLogin()
         {
             InitializeComponent();
-            Principal = new Principal();
+            Principal = new FrmPrincipal();
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -99,9 +99,9 @@ namespace PresentacionGui
         {
             if (Vacio())
             {
-                if (TxUsuario.Text.Equals("Admin02"))
+                if (TxUsuario.Text.Equals("A"))
                 {
-                    if (TxClave.Text.Equals("Clave02"))
+                    if (TxClave.Text.Equals("C"))
                     {
                         Principal.Visible = true;
                         this.Visible = false;

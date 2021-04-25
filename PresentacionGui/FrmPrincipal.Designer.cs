@@ -1,7 +1,7 @@
 ﻿
 namespace PresentacionGui
 {
-    partial class Principal
+    partial class FrmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,14 +29,14 @@ namespace PresentacionGui
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.PnlSuperior = new System.Windows.Forms.Panel();
             this.PnlContenedor = new System.Windows.Forms.Panel();
             this.PnlPrincipal = new System.Windows.Forms.Panel();
             this.PnlLogo = new System.Windows.Forms.Panel();
             this.BtnCotizacion = new System.Windows.Forms.Button();
             this.PnlBtnGestionarCotizacion = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnCotizar = new System.Windows.Forms.Button();
             this.BtnGestionServicio = new System.Windows.Forms.Button();
             this.PnlBtnGestionServicio = new System.Windows.Forms.Panel();
             this.BtnConsultar = new System.Windows.Forms.Button();
@@ -69,6 +69,8 @@ namespace PresentacionGui
             this.PnlSuperior.Name = "PnlSuperior";
             this.PnlSuperior.Size = new System.Drawing.Size(934, 40);
             this.PnlSuperior.TabIndex = 1;
+            this.PnlSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlSuperior_Paint);
+            this.PnlSuperior.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PnlSuperior_MouseMove);
             // 
             // PnlContenedor
             // 
@@ -122,29 +124,29 @@ namespace PresentacionGui
             // PnlBtnGestionarCotizacion
             // 
             this.PnlBtnGestionarCotizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.PnlBtnGestionarCotizacion.Controls.Add(this.button2);
+            this.PnlBtnGestionarCotizacion.Controls.Add(this.BtnCotizar);
             this.PnlBtnGestionarCotizacion.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlBtnGestionarCotizacion.Location = new System.Drawing.Point(0, 198);
             this.PnlBtnGestionarCotizacion.Name = "PnlBtnGestionarCotizacion";
             this.PnlBtnGestionarCotizacion.Size = new System.Drawing.Size(189, 51);
             this.PnlBtnGestionarCotizacion.TabIndex = 2;
             // 
-            // button2
+            // BtnCotizar
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DimGray;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(189, 38);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Cotizar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BtnCotizar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCotizar.FlatAppearance.BorderSize = 0;
+            this.BtnCotizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCotizar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCotizar.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnCotizar.Location = new System.Drawing.Point(0, 0);
+            this.BtnCotizar.Name = "BtnCotizar";
+            this.BtnCotizar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.BtnCotizar.Size = new System.Drawing.Size(189, 38);
+            this.BtnCotizar.TabIndex = 0;
+            this.BtnCotizar.Text = "Agregar Cotizacion";
+            this.BtnCotizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCotizar.UseVisualStyleBackColor = true;
+            this.BtnCotizar.Click += new System.EventHandler(this.button2_Click);
             // 
             // BtnGestionServicio
             // 
@@ -294,7 +296,7 @@ namespace PresentacionGui
         private System.Windows.Forms.Button BtnConsultar;
         private System.Windows.Forms.Button BtnGestionServicio;
         private System.Windows.Forms.Panel PnlBtnGestionarCotizacion;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnCotizar;
         private System.Windows.Forms.Button BtnCotizacion;
         private System.Windows.Forms.Panel PnlLogo;
         private System.Windows.Forms.PictureBox BtnPbxMinimizar;

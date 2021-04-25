@@ -11,26 +11,22 @@ using System.Windows.Forms;
 
 namespace PresentacionGui
 {
-    public partial class Principal : Form
+    public partial class FrmPrincipal : Form
     {
-        public Principal()
+        public FrmPrincipal()
         {
             InitializeComponent();
             EsconderSubMenus();
             this.SetStyle(ControlStyles.ResizeRedraw, true);
             this.DoubleBuffered = true;
         }
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
 
         private void Principal_Load(object sender, EventArgs e)
         {
             //no tocar
         }
 
+        #region Funcionalidades de form
         private void EsconderSubMenus()
         {
             PnlBtnGestionarCotizacion.Visible = false;
@@ -60,10 +56,12 @@ namespace PresentacionGui
             MostrarSubMenus(PnlBtnGestionServicio);
         }
         #endregion
-        #region Botones_Secundarios_Menu
+        #region Botones_Secundarios_SubMenu
         private void button2_Click(object sender, EventArgs e)
         {
             //escribi sobre este metodo
+            AbrirFormulario<FrmCotizacion>();
+            BtnCotizar.BackColor = Color.FromArgb(32, 178, 170);
             EsconderSubMenus();
         }
 
@@ -153,8 +151,54 @@ namespace PresentacionGui
             this.Location = new Point(lx, ly);
         }
         #endregion
-    
 
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
 
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void PnlSuperior_Paint(object sender, PaintEventArgs e)
+        {
+            //no tocar
+        }
+        private void PnlSuperior_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        #endregion
+
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario;
+            formulario = PnlPrincipal.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
+                                                                                     //si el formulario/instancia no existe
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                PnlPrincipal.Controls.Add(formulario);
+                PnlPrincipal.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+                formulario.FormClosed += new FormClosedEventHandler(CerrarFormularios);
+            }
+            //si el formulario/instancia existe
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+
+        private void CerrarFormularios(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms["FrmCotizacion"] == null)
+            {
+                BtnCotizar.BackColor = Color.FromArgb(15, 15, 15);
+            }
+        }
     }
 }
