@@ -18,10 +18,11 @@ namespace Entity
         public double Importe { get; set; }
         public double Total { get; set; }
 
-        public void AgregarDetalleFactura()
+        /*public void AgregarDetalleFactura()
         {
             Factura factura = new Factura();
 
-        }
+        }*/
+
     }
 }

@@ -8,23 +8,36 @@ namespace Entity
 {
     public class Factura
     {
+        public string Codigo { get; set; }
         public string IdCliente { get; set; }
         public Persona Persona { get; set; }
-        public long Codigo { get; set; }
-        public DateTime FechaCreacion { get; set; }
-        public DateTime FechaVencimiento { get; set; }
-        public string NumeroServicio { get; set; }
+        public DateTime Fecha { get; set; }
+        public Servicio Servicio { get; set; }
         public List<DetalleFactura> DetallesFactura { get; set; }
         public double Total { get; set; }
+        //public DateTime FechaVencimiento { get; set; }
 
-
-        public void CalcularSubtotal()
+        public void CalcularSubTotal()
         {
-            double subtotal = 0;
+            double subTotal = 0;
             foreach (var item in DetallesFactura)
             {
-                subtotal += item.Total;
+                subTotal += item.Total;
             }
+        }
+
+        public void AgregarDetalles(DetalleFactura detalle)
+        {
+            DetallesFactura.Add(detalle);
+        }
+
+        public void GuardarFactura()
+        {
+
+        }
+
+        public void ConsultarFactura()
+        {
 
         }
 
