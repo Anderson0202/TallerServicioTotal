@@ -53,6 +53,9 @@ namespace PresentacionGui
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.TCDatosCotizacion.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -198,6 +201,7 @@ namespace PresentacionGui
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.BtnCambioDeAceite);
             this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.shapeContainer1);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -444,7 +448,7 @@ namespace PresentacionGui
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DimGray;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(424, 293);
+            this.button1.Location = new System.Drawing.Point(409, 293);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 72);
             this.button1.TabIndex = 7;
@@ -470,6 +474,40 @@ namespace PresentacionGui
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape1.Enabled = false;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 52;
+            this.lineShape1.X2 = 714;
+            this.lineShape1.Y1 = 376;
+            this.lineShape1.Y2 = 381;
+            this.lineShape1.Click += new System.EventHandler(this.lineShape1_Click);
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(3, 3);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape2,
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(765, 660);
+            this.shapeContainer1.TabIndex = 9;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape2.Enabled = false;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 54;
+            this.lineShape2.X2 = 718;
+            this.lineShape2.Y1 = 233;
+            this.lineShape2.Y2 = 232;
+            this.lineShape2.Click += new System.EventHandler(this.lineShape1_Click);
             // 
             // FrmCotizacion
             // 
@@ -523,5 +561,8 @@ namespace PresentacionGui
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BtnCambioDeAceite;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
     }
 }

@@ -21,5 +21,10 @@ namespace PresentacionGui
         {
             this.Close();
         }
+
+        private void lineShape1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
