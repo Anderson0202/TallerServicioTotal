@@ -12,5 +12,6 @@ namespace Entity
         {
             Persona = persona;
         }
+
     }
 }

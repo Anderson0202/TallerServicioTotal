@@ -14,5 +14,6 @@ namespace Entity
         public DateTime FechaNacimiento { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
+
     }
 }
