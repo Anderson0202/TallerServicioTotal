@@ -169,7 +169,10 @@ namespace PresentacionGui
         }
         #endregion
 
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        private void BtnPbxMinimizar_MouseHover(object sender, EventArgs e){/*no tocar*/}
+        private void BtnPbxMinimizar_MouseMove(object sender, MouseEventArgs e){/*no tocar*/}
+
+            private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario;
             formulario = PnlPrincipal.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
@@ -200,5 +203,7 @@ namespace PresentacionGui
                 BtnCotizar.BackColor = Color.FromArgb(15, 15, 15);
             }
         }
+
+
     }
 }

@@ -31,29 +31,29 @@ namespace PresentacionGui
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.PnlSuperior = new System.Windows.Forms.Panel();
+            this.BtnPbxMinimizar = new System.Windows.Forms.PictureBox();
+            this.BtnPbxRestaurar = new System.Windows.Forms.PictureBox();
+            this.BtnPbxMaximizar = new System.Windows.Forms.PictureBox();
+            this.BtnPbxCerrar = new System.Windows.Forms.PictureBox();
             this.PnlContenedor = new System.Windows.Forms.Panel();
             this.PnlPrincipal = new System.Windows.Forms.Panel();
-            this.PnlLogo = new System.Windows.Forms.Panel();
-            this.BtnCotizacion = new System.Windows.Forms.Button();
-            this.PnlBtnGestionarCotizacion = new System.Windows.Forms.Panel();
-            this.BtnCotizar = new System.Windows.Forms.Button();
-            this.BtnGestionServicio = new System.Windows.Forms.Button();
+            this.PnlMenu = new System.Windows.Forms.Panel();
             this.PnlBtnGestionServicio = new System.Windows.Forms.Panel();
             this.BtnConsultar = new System.Windows.Forms.Button();
-            this.PnlMenu = new System.Windows.Forms.Panel();
-            this.BtnPbxCerrar = new System.Windows.Forms.PictureBox();
-            this.BtnPbxMaximizar = new System.Windows.Forms.PictureBox();
-            this.BtnPbxRestaurar = new System.Windows.Forms.PictureBox();
-            this.BtnPbxMinimizar = new System.Windows.Forms.PictureBox();
+            this.BtnGestionServicio = new System.Windows.Forms.Button();
+            this.PnlBtnGestionarCotizacion = new System.Windows.Forms.Panel();
+            this.BtnCotizar = new System.Windows.Forms.Button();
+            this.BtnCotizacion = new System.Windows.Forms.Button();
+            this.PnlLogo = new System.Windows.Forms.Panel();
             this.PnlSuperior.SuspendLayout();
-            this.PnlContenedor.SuspendLayout();
-            this.PnlBtnGestionarCotizacion.SuspendLayout();
-            this.PnlBtnGestionServicio.SuspendLayout();
-            this.PnlMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPbxMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxCerrar)).BeginInit();
+            this.PnlContenedor.SuspendLayout();
+            this.PnlMenu.SuspendLayout();
+            this.PnlBtnGestionServicio.SuspendLayout();
+            this.PnlBtnGestionarCotizacion.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlSuperior
@@ -71,6 +71,61 @@ namespace PresentacionGui
             this.PnlSuperior.TabIndex = 1;
             this.PnlSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlSuperior_Paint);
             this.PnlSuperior.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PnlSuperior_MouseMove);
+            // 
+            // BtnPbxMinimizar
+            // 
+            this.BtnPbxMinimizar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnPbxMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxMinimizar.Image")));
+            this.BtnPbxMinimizar.Location = new System.Drawing.Point(819, 6);
+            this.BtnPbxMinimizar.Margin = new System.Windows.Forms.Padding(0);
+            this.BtnPbxMinimizar.Name = "BtnPbxMinimizar";
+            this.BtnPbxMinimizar.Size = new System.Drawing.Size(28, 28);
+            this.BtnPbxMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnPbxMinimizar.TabIndex = 3;
+            this.BtnPbxMinimizar.TabStop = false;
+            this.BtnPbxMinimizar.Click += new System.EventHandler(this.BtnPbxMinimizar_Click);
+            this.BtnPbxMinimizar.MouseHover += new System.EventHandler(this.BtnPbxMinimizar_MouseHover);
+            this.BtnPbxMinimizar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnPbxMinimizar_MouseMove);
+            // 
+            // BtnPbxRestaurar
+            // 
+            this.BtnPbxRestaurar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnPbxRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxRestaurar.Image")));
+            this.BtnPbxRestaurar.Location = new System.Drawing.Point(857, 6);
+            this.BtnPbxRestaurar.Margin = new System.Windows.Forms.Padding(0);
+            this.BtnPbxRestaurar.Name = "BtnPbxRestaurar";
+            this.BtnPbxRestaurar.Size = new System.Drawing.Size(28, 28);
+            this.BtnPbxRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnPbxRestaurar.TabIndex = 2;
+            this.BtnPbxRestaurar.TabStop = false;
+            this.BtnPbxRestaurar.Visible = false;
+            this.BtnPbxRestaurar.Click += new System.EventHandler(this.BtnPbxRestaurar_Click);
+            // 
+            // BtnPbxMaximizar
+            // 
+            this.BtnPbxMaximizar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnPbxMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxMaximizar.Image")));
+            this.BtnPbxMaximizar.Location = new System.Drawing.Point(857, 6);
+            this.BtnPbxMaximizar.Margin = new System.Windows.Forms.Padding(0);
+            this.BtnPbxMaximizar.Name = "BtnPbxMaximizar";
+            this.BtnPbxMaximizar.Size = new System.Drawing.Size(28, 28);
+            this.BtnPbxMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnPbxMaximizar.TabIndex = 1;
+            this.BtnPbxMaximizar.TabStop = false;
+            this.BtnPbxMaximizar.Click += new System.EventHandler(this.BtnPbxMaximizar_Click);
+            // 
+            // BtnPbxCerrar
+            // 
+            this.BtnPbxCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnPbxCerrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxCerrar.Image")));
+            this.BtnPbxCerrar.Location = new System.Drawing.Point(897, 6);
+            this.BtnPbxCerrar.Margin = new System.Windows.Forms.Padding(0);
+            this.BtnPbxCerrar.Name = "BtnPbxCerrar";
+            this.BtnPbxCerrar.Size = new System.Drawing.Size(28, 28);
+            this.BtnPbxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnPbxCerrar.TabIndex = 0;
+            this.BtnPbxCerrar.TabStop = false;
+            this.BtnPbxCerrar.Click += new System.EventHandler(this.BtnPbxCerrar_Click);
             // 
             // PnlContenedor
             // 
@@ -94,78 +149,20 @@ namespace PresentacionGui
             this.PnlPrincipal.Size = new System.Drawing.Size(745, 521);
             this.PnlPrincipal.TabIndex = 0;
             // 
-            // PnlLogo
+            // PnlMenu
             // 
-            this.PnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.PnlLogo.Name = "PnlLogo";
-            this.PnlLogo.Size = new System.Drawing.Size(189, 153);
-            this.PnlLogo.TabIndex = 1;
-            // 
-            // BtnCotizacion
-            // 
-            this.BtnCotizacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnCotizacion.FlatAppearance.BorderSize = 0;
-            this.BtnCotizacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.BtnCotizacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SpringGreen;
-            this.BtnCotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCotizacion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCotizacion.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnCotizacion.Location = new System.Drawing.Point(0, 153);
-            this.BtnCotizacion.Name = "BtnCotizacion";
-            this.BtnCotizacion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnCotizacion.Size = new System.Drawing.Size(189, 45);
-            this.BtnCotizacion.TabIndex = 0;
-            this.BtnCotizacion.Text = "Gestion Cotizacion";
-            this.BtnCotizacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCotizacion.UseVisualStyleBackColor = true;
-            this.BtnCotizacion.Click += new System.EventHandler(this.BtnCotizacion_Click);
-            // 
-            // PnlBtnGestionarCotizacion
-            // 
-            this.PnlBtnGestionarCotizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.PnlBtnGestionarCotizacion.Controls.Add(this.BtnCotizar);
-            this.PnlBtnGestionarCotizacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlBtnGestionarCotizacion.Location = new System.Drawing.Point(0, 198);
-            this.PnlBtnGestionarCotizacion.Name = "PnlBtnGestionarCotizacion";
-            this.PnlBtnGestionarCotizacion.Size = new System.Drawing.Size(189, 51);
-            this.PnlBtnGestionarCotizacion.TabIndex = 2;
-            // 
-            // BtnCotizar
-            // 
-            this.BtnCotizar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnCotizar.FlatAppearance.BorderSize = 0;
-            this.BtnCotizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCotizar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCotizar.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnCotizar.Location = new System.Drawing.Point(0, 0);
-            this.BtnCotizar.Name = "BtnCotizar";
-            this.BtnCotizar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnCotizar.Size = new System.Drawing.Size(189, 38);
-            this.BtnCotizar.TabIndex = 0;
-            this.BtnCotizar.Text = "Agregar Cotizacion";
-            this.BtnCotizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCotizar.UseVisualStyleBackColor = true;
-            this.BtnCotizar.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // BtnGestionServicio
-            // 
-            this.BtnGestionServicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnGestionServicio.FlatAppearance.BorderSize = 0;
-            this.BtnGestionServicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.BtnGestionServicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SpringGreen;
-            this.BtnGestionServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGestionServicio.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGestionServicio.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnGestionServicio.Location = new System.Drawing.Point(0, 249);
-            this.BtnGestionServicio.Name = "BtnGestionServicio";
-            this.BtnGestionServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnGestionServicio.Size = new System.Drawing.Size(189, 45);
-            this.BtnGestionServicio.TabIndex = 3;
-            this.BtnGestionServicio.Text = "Gestion Servicio";
-            this.BtnGestionServicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGestionServicio.UseVisualStyleBackColor = true;
-            this.BtnGestionServicio.Click += new System.EventHandler(this.button1_Click);
+            this.PnlMenu.AutoScroll = true;
+            this.PnlMenu.BackColor = System.Drawing.Color.Indigo;
+            this.PnlMenu.Controls.Add(this.PnlBtnGestionServicio);
+            this.PnlMenu.Controls.Add(this.BtnGestionServicio);
+            this.PnlMenu.Controls.Add(this.PnlBtnGestionarCotizacion);
+            this.PnlMenu.Controls.Add(this.BtnCotizacion);
+            this.PnlMenu.Controls.Add(this.PnlLogo);
+            this.PnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnlMenu.Location = new System.Drawing.Point(0, 40);
+            this.PnlMenu.Name = "PnlMenu";
+            this.PnlMenu.Size = new System.Drawing.Size(189, 521);
+            this.PnlMenu.TabIndex = 0;
             // 
             // PnlBtnGestionServicio
             // 
@@ -194,75 +191,82 @@ namespace PresentacionGui
             this.BtnConsultar.UseVisualStyleBackColor = true;
             this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
-            // PnlMenu
+            // BtnGestionServicio
             // 
-            this.PnlMenu.AutoScroll = true;
-            this.PnlMenu.BackColor = System.Drawing.Color.Indigo;
-            this.PnlMenu.Controls.Add(this.PnlBtnGestionServicio);
-            this.PnlMenu.Controls.Add(this.BtnGestionServicio);
-            this.PnlMenu.Controls.Add(this.PnlBtnGestionarCotizacion);
-            this.PnlMenu.Controls.Add(this.BtnCotizacion);
-            this.PnlMenu.Controls.Add(this.PnlLogo);
-            this.PnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlMenu.Location = new System.Drawing.Point(0, 40);
-            this.PnlMenu.Name = "PnlMenu";
-            this.PnlMenu.Size = new System.Drawing.Size(189, 521);
-            this.PnlMenu.TabIndex = 0;
+            this.BtnGestionServicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnGestionServicio.FlatAppearance.BorderSize = 0;
+            this.BtnGestionServicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnGestionServicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SpringGreen;
+            this.BtnGestionServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGestionServicio.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGestionServicio.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnGestionServicio.Location = new System.Drawing.Point(0, 249);
+            this.BtnGestionServicio.Name = "BtnGestionServicio";
+            this.BtnGestionServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnGestionServicio.Size = new System.Drawing.Size(189, 45);
+            this.BtnGestionServicio.TabIndex = 3;
+            this.BtnGestionServicio.Text = "Gestion Servicio";
+            this.BtnGestionServicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnGestionServicio.UseVisualStyleBackColor = true;
+            this.BtnGestionServicio.Click += new System.EventHandler(this.button1_Click);
             // 
-            // BtnPbxCerrar
+            // PnlBtnGestionarCotizacion
             // 
-            this.BtnPbxCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnPbxCerrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxCerrar.Image")));
-            this.BtnPbxCerrar.Location = new System.Drawing.Point(897, 6);
-            this.BtnPbxCerrar.Margin = new System.Windows.Forms.Padding(0);
-            this.BtnPbxCerrar.Name = "BtnPbxCerrar";
-            this.BtnPbxCerrar.Size = new System.Drawing.Size(28, 28);
-            this.BtnPbxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnPbxCerrar.TabIndex = 0;
-            this.BtnPbxCerrar.TabStop = false;
-            this.BtnPbxCerrar.Click += new System.EventHandler(this.BtnPbxCerrar_Click);
+            this.PnlBtnGestionarCotizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.PnlBtnGestionarCotizacion.Controls.Add(this.BtnCotizar);
+            this.PnlBtnGestionarCotizacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlBtnGestionarCotizacion.Location = new System.Drawing.Point(0, 198);
+            this.PnlBtnGestionarCotizacion.Name = "PnlBtnGestionarCotizacion";
+            this.PnlBtnGestionarCotizacion.Size = new System.Drawing.Size(189, 51);
+            this.PnlBtnGestionarCotizacion.TabIndex = 2;
             // 
-            // BtnPbxMaximizar
+            // BtnCotizar
             // 
-            this.BtnPbxMaximizar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnPbxMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxMaximizar.Image")));
-            this.BtnPbxMaximizar.Location = new System.Drawing.Point(857, 6);
-            this.BtnPbxMaximizar.Margin = new System.Windows.Forms.Padding(0);
-            this.BtnPbxMaximizar.Name = "BtnPbxMaximizar";
-            this.BtnPbxMaximizar.Size = new System.Drawing.Size(28, 28);
-            this.BtnPbxMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnPbxMaximizar.TabIndex = 1;
-            this.BtnPbxMaximizar.TabStop = false;
-            this.BtnPbxMaximizar.Click += new System.EventHandler(this.BtnPbxMaximizar_Click);
+            this.BtnCotizar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCotizar.FlatAppearance.BorderSize = 0;
+            this.BtnCotizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCotizar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCotizar.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnCotizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCotizar.Image")));
+            this.BtnCotizar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCotizar.Location = new System.Drawing.Point(0, 0);
+            this.BtnCotizar.Name = "BtnCotizar";
+            this.BtnCotizar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.BtnCotizar.Size = new System.Drawing.Size(189, 38);
+            this.BtnCotizar.TabIndex = 0;
+            this.BtnCotizar.Text = "Agregar Cotizacion";
+            this.BtnCotizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCotizar.UseVisualStyleBackColor = true;
+            this.BtnCotizar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // BtnPbxRestaurar
+            // BtnCotizacion
             // 
-            this.BtnPbxRestaurar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnPbxRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxRestaurar.Image")));
-            this.BtnPbxRestaurar.Location = new System.Drawing.Point(857, 6);
-            this.BtnPbxRestaurar.Margin = new System.Windows.Forms.Padding(0);
-            this.BtnPbxRestaurar.Name = "BtnPbxRestaurar";
-            this.BtnPbxRestaurar.Size = new System.Drawing.Size(28, 28);
-            this.BtnPbxRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnPbxRestaurar.TabIndex = 2;
-            this.BtnPbxRestaurar.TabStop = false;
-            this.BtnPbxRestaurar.Visible = false;
-            this.BtnPbxRestaurar.Click += new System.EventHandler(this.BtnPbxRestaurar_Click);
+            this.BtnCotizacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCotizacion.FlatAppearance.BorderSize = 0;
+            this.BtnCotizacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnCotizacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SpringGreen;
+            this.BtnCotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCotizacion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCotizacion.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnCotizacion.Location = new System.Drawing.Point(0, 153);
+            this.BtnCotizacion.Name = "BtnCotizacion";
+            this.BtnCotizacion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnCotizacion.Size = new System.Drawing.Size(189, 45);
+            this.BtnCotizacion.TabIndex = 0;
+            this.BtnCotizacion.Text = "Gestion Cotizacion";
+            this.BtnCotizacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCotizacion.UseVisualStyleBackColor = true;
+            this.BtnCotizacion.Click += new System.EventHandler(this.BtnCotizacion_Click);
             // 
-            // BtnPbxMinimizar
+            // PnlLogo
             // 
-            this.BtnPbxMinimizar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnPbxMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxMinimizar.Image")));
-            this.BtnPbxMinimizar.Location = new System.Drawing.Point(819, 6);
-            this.BtnPbxMinimizar.Margin = new System.Windows.Forms.Padding(0);
-            this.BtnPbxMinimizar.Name = "BtnPbxMinimizar";
-            this.BtnPbxMinimizar.Size = new System.Drawing.Size(28, 28);
-            this.BtnPbxMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnPbxMinimizar.TabIndex = 3;
-            this.BtnPbxMinimizar.TabStop = false;
-            this.BtnPbxMinimizar.Click += new System.EventHandler(this.BtnPbxMinimizar_Click);
+            this.PnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.PnlLogo.Name = "PnlLogo";
+            this.PnlLogo.Size = new System.Drawing.Size(189, 153);
+            this.PnlLogo.TabIndex = 1;
             // 
-            // Principal
+            // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -270,19 +274,19 @@ namespace PresentacionGui
             this.Controls.Add(this.PnlContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(700, 350);
-            this.Name = "Principal";
+            this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.PnlSuperior.ResumeLayout(false);
-            this.PnlContenedor.ResumeLayout(false);
-            this.PnlBtnGestionarCotizacion.ResumeLayout(false);
-            this.PnlBtnGestionServicio.ResumeLayout(false);
-            this.PnlMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPbxMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnPbxCerrar)).EndInit();
+            this.PnlContenedor.ResumeLayout(false);
+            this.PnlMenu.ResumeLayout(false);
+            this.PnlBtnGestionServicio.ResumeLayout(false);
+            this.PnlBtnGestionarCotizacion.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
