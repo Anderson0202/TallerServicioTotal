@@ -31,21 +31,21 @@ namespace PresentacionGui
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.TxUsuario = new System.Windows.Forms.TextBox();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.TxClave = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BntAcceder = new System.Windows.Forms.Button();
             this.LinkClave = new System.Windows.Forms.LinkLabel();
             this.BtnPbCerrar = new System.Windows.Forms.PictureBox();
             this.BtnPbMinimizar = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPbCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPbMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,6 +59,17 @@ namespace PresentacionGui
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(60, 91);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(130, 121);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // shapeContainer1
             // 
             this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
@@ -70,6 +81,17 @@ namespace PresentacionGui
             this.shapeContainer1.Size = new System.Drawing.Size(764, 291);
             this.shapeContainer1.TabIndex = 1;
             this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape2.Enabled = false;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 330;
+            this.lineShape2.X2 = 652;
+            this.lineShape2.Y1 = 154;
+            this.lineShape2.Y2 = 154;
+            this.lineShape2.Click += new System.EventHandler(this.lineShape1_Click);
             // 
             // lineShape1
             // 
@@ -96,17 +118,6 @@ namespace PresentacionGui
             this.TxUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.TxUsuario.Enter += new System.EventHandler(this.TxUsuario_Enter);
             this.TxUsuario.Leave += new System.EventHandler(this.TxUsuario_Leave);
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
-            this.lineShape2.Enabled = false;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 330;
-            this.lineShape2.X2 = 652;
-            this.lineShape2.Y1 = 154;
-            this.lineShape2.Y2 = 154;
-            this.lineShape2.Click += new System.EventHandler(this.lineShape1_Click);
             // 
             // TxClave
             // 
@@ -184,17 +195,7 @@ namespace PresentacionGui
             this.BtnPbMinimizar.TabStop = false;
             this.BtnPbMinimizar.Click += new System.EventHandler(this.BtnPbMinimizar_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(60, 91);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(130, 121);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // Login
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -210,15 +211,15 @@ namespace PresentacionGui
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Login";
+            this.Name = "FrmLogin";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPbCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPbMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

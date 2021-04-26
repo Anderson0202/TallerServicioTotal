@@ -148,5 +148,10 @@ namespace PresentacionGui
         {
             MessageBox.Show(txt, "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

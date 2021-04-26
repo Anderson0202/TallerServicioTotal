@@ -172,11 +172,10 @@ namespace PresentacionGui
         private void BtnPbxMinimizar_MouseHover(object sender, EventArgs e){/*no tocar*/}
         private void BtnPbxMinimizar_MouseMove(object sender, MouseEventArgs e){/*no tocar*/}
 
-            private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario;
-            formulario = PnlPrincipal.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
-                                                                                     //si el formulario/instancia no existe
+            formulario = PnlPrincipal.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario                                                                     //si el formulario/instancia no existe
             if (formulario == null)
             {
                 formulario = new MiForm();

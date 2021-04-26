@@ -49,13 +49,37 @@ namespace PresentacionGui
             this.label8 = new System.Windows.Forms.Label();
             this.CmbCilindraje = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.BtnCambioDeAceite = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnCambioAceite = new System.Windows.Forms.Button();
+            this.BtnLatoneriaPintura = new System.Windows.Forms.Button();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.BtnAlineacionBalanceo = new System.Windows.Forms.Button();
+            this.BtnCambioLlanta = new System.Windows.Forms.Button();
+            this.BtnCambioPlumillas = new System.Windows.Forms.Button();
+            this.BtnAireAcondicionado = new System.Windows.Forms.Button();
+            this.BtnLiquidoFrenos = new System.Windows.Forms.Button();
+            this.BtnLiquidoRefrigerante = new System.Windows.Forms.Button();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.BtnRevisionGeneral = new System.Windows.Forms.Button();
+            this.BtnRevisionFrenos = new System.Windows.Forms.Button();
+            this.BtnRevisionSuspencion = new System.Windows.Forms.Button();
+            this.BtnServicioEscaner = new System.Windows.Forms.Button();
+            this.BtnPeritajes = new System.Windows.Forms.Button();
+            this.BtnRevisionKilometraje = new System.Windows.Forms.Button();
+            this.BtnRevisionBateria = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.BtnSincronizacion = new System.Windows.Forms.Button();
+            this.BtnDiscosFrenos = new System.Windows.Forms.Button();
+            this.BtnCorreaReparticion = new System.Windows.Forms.Button();
+            this.BtnKitEmbrague = new System.Windows.Forms.Button();
+            this.BtnPastillasFrenos = new System.Windows.Forms.Button();
+            this.BtnAmortiguadores = new System.Windows.Forms.Button();
+            this.BtnCambioBateria = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.TCDatosCotizacion.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -74,7 +98,7 @@ namespace PresentacionGui
             this.BtnCancelar.ForeColor = System.Drawing.Color.DimGray;
             this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCancelar.Location = new System.Drawing.Point(12, 745);
+            this.BtnCancelar.Location = new System.Drawing.Point(12, 831);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(104, 31);
             this.BtnCancelar.TabIndex = 0;
@@ -169,7 +193,7 @@ namespace PresentacionGui
             this.TCDatosCotizacion.Location = new System.Drawing.Point(39, 33);
             this.TCDatosCotizacion.Name = "TCDatosCotizacion";
             this.TCDatosCotizacion.SelectedIndex = 0;
-            this.TCDatosCotizacion.Size = new System.Drawing.Size(779, 696);
+            this.TCDatosCotizacion.Size = new System.Drawing.Size(779, 785);
             this.TCDatosCotizacion.TabIndex = 7;
             // 
             // tabPage1
@@ -189,23 +213,44 @@ namespace PresentacionGui
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(704, 318);
+            this.tabPage1.Size = new System.Drawing.Size(771, 676);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "VEHICULO";
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.BtnCambioDeAceite);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.BtnCambioBateria);
+            this.tabPage2.Controls.Add(this.BtnAmortiguadores);
+            this.tabPage2.Controls.Add(this.BtnPastillasFrenos);
+            this.tabPage2.Controls.Add(this.BtnKitEmbrague);
+            this.tabPage2.Controls.Add(this.BtnCorreaReparticion);
+            this.tabPage2.Controls.Add(this.BtnDiscosFrenos);
+            this.tabPage2.Controls.Add(this.BtnSincronizacion);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.BtnRevisionBateria);
+            this.tabPage2.Controls.Add(this.BtnRevisionKilometraje);
+            this.tabPage2.Controls.Add(this.BtnPeritajes);
+            this.tabPage2.Controls.Add(this.BtnServicioEscaner);
+            this.tabPage2.Controls.Add(this.BtnRevisionSuspencion);
+            this.tabPage2.Controls.Add(this.BtnRevisionFrenos);
+            this.tabPage2.Controls.Add(this.BtnRevisionGeneral);
+            this.tabPage2.Controls.Add(this.BtnLiquidoRefrigerante);
+            this.tabPage2.Controls.Add(this.BtnLiquidoFrenos);
+            this.tabPage2.Controls.Add(this.BtnAireAcondicionado);
+            this.tabPage2.Controls.Add(this.BtnCambioPlumillas);
+            this.tabPage2.Controls.Add(this.BtnCambioLlanta);
+            this.tabPage2.Controls.Add(this.BtnAlineacionBalanceo);
+            this.tabPage2.Controls.Add(this.BtnLatoneriaPintura);
+            this.tabPage2.Controls.Add(this.BtnCambioAceite);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.shapeContainer1);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(771, 666);
+            this.tabPage2.Size = new System.Drawing.Size(771, 755);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "SERVICIO";
             // 
@@ -216,7 +261,7 @@ namespace PresentacionGui
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(461, 182);
+            this.tabPage3.Size = new System.Drawing.Size(771, 666);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "AGENDA";
             // 
@@ -226,7 +271,7 @@ namespace PresentacionGui
             this.tabPage4.Controls.Add(this.label6);
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(704, 318);
+            this.tabPage4.Size = new System.Drawing.Size(771, 666);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "CONTACTO";
             // 
@@ -402,88 +447,54 @@ namespace PresentacionGui
             this.label9.TabIndex = 10;
             this.label9.Text = "Cilindraje";
             // 
-            // BtnCambioDeAceite
+            // BtnCambioAceite
             // 
-            this.BtnCambioDeAceite.AllowDrop = true;
-            this.BtnCambioDeAceite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnCambioDeAceite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.BtnCambioDeAceite.FlatAppearance.BorderSize = 0;
-            this.BtnCambioDeAceite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCambioDeAceite.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCambioDeAceite.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnCambioDeAceite.Image = ((System.Drawing.Image)(resources.GetObject("BtnCambioDeAceite.Image")));
-            this.BtnCambioDeAceite.Location = new System.Drawing.Point(46, 293);
-            this.BtnCambioDeAceite.Name = "BtnCambioDeAceite";
-            this.BtnCambioDeAceite.Size = new System.Drawing.Size(148, 72);
-            this.BtnCambioDeAceite.TabIndex = 5;
-            this.BtnCambioDeAceite.Text = "Cambio de Aceite";
-            this.BtnCambioDeAceite.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnCambioDeAceite.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnCambioDeAceite.UseVisualStyleBackColor = false;
+            this.BtnCambioAceite.AllowDrop = true;
+            this.BtnCambioAceite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnCambioAceite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnCambioAceite.FlatAppearance.BorderSize = 0;
+            this.BtnCambioAceite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCambioAceite.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCambioAceite.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnCambioAceite.Image = ((System.Drawing.Image)(resources.GetObject("BtnCambioAceite.Image")));
+            this.BtnCambioAceite.Location = new System.Drawing.Point(479, 141);
+            this.BtnCambioAceite.Name = "BtnCambioAceite";
+            this.BtnCambioAceite.Size = new System.Drawing.Size(148, 72);
+            this.BtnCambioAceite.TabIndex = 5;
+            this.BtnCambioAceite.Text = "Cambio de Aceite";
+            this.BtnCambioAceite.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnCambioAceite.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnCambioAceite.UseVisualStyleBackColor = false;
+            this.BtnCambioAceite.Click += new System.EventHandler(this.BtnCambioDeAceite_Click);
             // 
-            // button2
+            // BtnLatoneriaPintura
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DimGray;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(243, 293);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 72);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Latoneria y Pintura";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(409, 293);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 72);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Revision por Kilometraje";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DimGray;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(593, 293);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 72);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Servicio de Escaner";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnLatoneriaPintura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnLatoneriaPintura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnLatoneriaPintura.FlatAppearance.BorderSize = 0;
+            this.BtnLatoneriaPintura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLatoneriaPintura.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLatoneriaPintura.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnLatoneriaPintura.Image = ((System.Drawing.Image)(resources.GetObject("BtnLatoneriaPintura.Image")));
+            this.BtnLatoneriaPintura.Location = new System.Drawing.Point(560, 366);
+            this.BtnLatoneriaPintura.Name = "BtnLatoneriaPintura";
+            this.BtnLatoneriaPintura.Size = new System.Drawing.Size(148, 72);
+            this.BtnLatoneriaPintura.TabIndex = 6;
+            this.BtnLatoneriaPintura.Text = "Latoneria y Pintura";
+            this.BtnLatoneriaPintura.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLatoneriaPintura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnLatoneriaPintura.UseVisualStyleBackColor = false;
+            this.BtnLatoneriaPintura.Click += new System.EventHandler(this.button2_Click);
             // 
             // lineShape1
             // 
             this.lineShape1.BorderColor = System.Drawing.Color.DimGray;
             this.lineShape1.Enabled = false;
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 52;
-            this.lineShape1.X2 = 714;
-            this.lineShape1.Y1 = 376;
-            this.lineShape1.Y2 = 381;
+            this.lineShape1.X1 = 54;
+            this.lineShape1.X2 = 720;
+            this.lineShape1.Y1 = 265;
+            this.lineShape1.Y2 = 265;
             this.lineShape1.Click += new System.EventHandler(this.lineShape1_Click);
             // 
             // shapeContainer1
@@ -493,8 +504,9 @@ namespace PresentacionGui
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape2,
+            this.lineShape3,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(765, 660);
+            this.shapeContainer1.Size = new System.Drawing.Size(765, 749);
             this.shapeContainer1.TabIndex = 9;
             this.shapeContainer1.TabStop = false;
             // 
@@ -504,10 +516,455 @@ namespace PresentacionGui
             this.lineShape2.Enabled = false;
             this.lineShape2.Name = "lineShape2";
             this.lineShape2.X1 = 54;
-            this.lineShape2.X2 = 718;
-            this.lineShape2.Y1 = 233;
-            this.lineShape2.Y2 = 232;
+            this.lineShape2.X2 = 720;
+            this.lineShape2.Y1 = 495;
+            this.lineShape2.Y2 = 495;
             this.lineShape2.Click += new System.EventHandler(this.lineShape1_Click);
+            // 
+            // BtnAlineacionBalanceo
+            // 
+            this.BtnAlineacionBalanceo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnAlineacionBalanceo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnAlineacionBalanceo.FlatAppearance.BorderSize = 0;
+            this.BtnAlineacionBalanceo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAlineacionBalanceo.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAlineacionBalanceo.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnAlineacionBalanceo.Image = ((System.Drawing.Image)(resources.GetObject("BtnAlineacionBalanceo.Image")));
+            this.BtnAlineacionBalanceo.Location = new System.Drawing.Point(60, 63);
+            this.BtnAlineacionBalanceo.Name = "BtnAlineacionBalanceo";
+            this.BtnAlineacionBalanceo.Size = new System.Drawing.Size(148, 72);
+            this.BtnAlineacionBalanceo.TabIndex = 10;
+            this.BtnAlineacionBalanceo.Text = "Alineacion y Balanceo";
+            this.BtnAlineacionBalanceo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAlineacionBalanceo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnAlineacionBalanceo.UseVisualStyleBackColor = false;
+            // 
+            // BtnCambioLlanta
+            // 
+            this.BtnCambioLlanta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnCambioLlanta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnCambioLlanta.FlatAppearance.BorderSize = 0;
+            this.BtnCambioLlanta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCambioLlanta.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCambioLlanta.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnCambioLlanta.Image = ((System.Drawing.Image)(resources.GetObject("BtnCambioLlanta.Image")));
+            this.BtnCambioLlanta.Location = new System.Drawing.Point(225, 63);
+            this.BtnCambioLlanta.Name = "BtnCambioLlanta";
+            this.BtnCambioLlanta.Size = new System.Drawing.Size(148, 72);
+            this.BtnCambioLlanta.TabIndex = 11;
+            this.BtnCambioLlanta.Text = "Cambio de Llanta";
+            this.BtnCambioLlanta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnCambioLlanta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnCambioLlanta.UseVisualStyleBackColor = false;
+            // 
+            // BtnCambioPlumillas
+            // 
+            this.BtnCambioPlumillas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnCambioPlumillas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnCambioPlumillas.FlatAppearance.BorderSize = 0;
+            this.BtnCambioPlumillas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCambioPlumillas.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCambioPlumillas.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnCambioPlumillas.Image = ((System.Drawing.Image)(resources.GetObject("BtnCambioPlumillas.Image")));
+            this.BtnCambioPlumillas.Location = new System.Drawing.Point(383, 63);
+            this.BtnCambioPlumillas.Name = "BtnCambioPlumillas";
+            this.BtnCambioPlumillas.Size = new System.Drawing.Size(148, 72);
+            this.BtnCambioPlumillas.TabIndex = 12;
+            this.BtnCambioPlumillas.Text = "Cambio de Plumillas";
+            this.BtnCambioPlumillas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnCambioPlumillas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnCambioPlumillas.UseVisualStyleBackColor = false;
+            this.BtnCambioPlumillas.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // BtnAireAcondicionado
+            // 
+            this.BtnAireAcondicionado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnAireAcondicionado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnAireAcondicionado.FlatAppearance.BorderSize = 0;
+            this.BtnAireAcondicionado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAireAcondicionado.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAireAcondicionado.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnAireAcondicionado.Image = ((System.Drawing.Image)(resources.GetObject("BtnAireAcondicionado.Image")));
+            this.BtnAireAcondicionado.Location = new System.Drawing.Point(560, 63);
+            this.BtnAireAcondicionado.Name = "BtnAireAcondicionado";
+            this.BtnAireAcondicionado.Size = new System.Drawing.Size(148, 72);
+            this.BtnAireAcondicionado.TabIndex = 13;
+            this.BtnAireAcondicionado.Text = "Aire Acondicionado";
+            this.BtnAireAcondicionado.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAireAcondicionado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnAireAcondicionado.UseVisualStyleBackColor = false;
+            // 
+            // BtnLiquidoFrenos
+            // 
+            this.BtnLiquidoFrenos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnLiquidoFrenos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnLiquidoFrenos.FlatAppearance.BorderSize = 0;
+            this.BtnLiquidoFrenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLiquidoFrenos.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLiquidoFrenos.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnLiquidoFrenos.Image = ((System.Drawing.Image)(resources.GetObject("BtnLiquidoFrenos.Image")));
+            this.BtnLiquidoFrenos.Location = new System.Drawing.Point(132, 141);
+            this.BtnLiquidoFrenos.Name = "BtnLiquidoFrenos";
+            this.BtnLiquidoFrenos.Size = new System.Drawing.Size(148, 72);
+            this.BtnLiquidoFrenos.TabIndex = 14;
+            this.BtnLiquidoFrenos.Text = "Liquido de Frenos";
+            this.BtnLiquidoFrenos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLiquidoFrenos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnLiquidoFrenos.UseVisualStyleBackColor = false;
+            // 
+            // BtnLiquidoRefrigerante
+            // 
+            this.BtnLiquidoRefrigerante.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnLiquidoRefrigerante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnLiquidoRefrigerante.FlatAppearance.BorderSize = 0;
+            this.BtnLiquidoRefrigerante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLiquidoRefrigerante.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLiquidoRefrigerante.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnLiquidoRefrigerante.Image = ((System.Drawing.Image)(resources.GetObject("BtnLiquidoRefrigerante.Image")));
+            this.BtnLiquidoRefrigerante.Location = new System.Drawing.Point(311, 141);
+            this.BtnLiquidoRefrigerante.Name = "BtnLiquidoRefrigerante";
+            this.BtnLiquidoRefrigerante.Size = new System.Drawing.Size(148, 72);
+            this.BtnLiquidoRefrigerante.TabIndex = 15;
+            this.BtnLiquidoRefrigerante.Text = "Liquido Refrigerante";
+            this.BtnLiquidoRefrigerante.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLiquidoRefrigerante.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnLiquidoRefrigerante.UseVisualStyleBackColor = false;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape3.Enabled = false;
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 57;
+            this.lineShape3.X2 = 723;
+            this.lineShape3.Y1 = 49;
+            this.lineShape3.Y2 = 49;
+            this.lineShape3.Click += new System.EventHandler(this.lineShape1_Click);
+            // 
+            // lineShape4
+            // 
+            this.lineShape4.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape4.Enabled = false;
+            this.lineShape4.Name = "lineShape4";
+            this.lineShape4.X1 = 388;
+            this.lineShape4.X2 = 455;
+            this.lineShape4.Y1 = 848;
+            this.lineShape4.Y2 = 848;
+            this.lineShape4.Click += new System.EventHandler(this.lineShape1_Click);
+            // 
+            // BtnRevisionGeneral
+            // 
+            this.BtnRevisionGeneral.AllowDrop = true;
+            this.BtnRevisionGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnRevisionGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnRevisionGeneral.FlatAppearance.BorderSize = 0;
+            this.BtnRevisionGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRevisionGeneral.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRevisionGeneral.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnRevisionGeneral.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevisionGeneral.Image")));
+            this.BtnRevisionGeneral.Location = new System.Drawing.Point(60, 278);
+            this.BtnRevisionGeneral.Name = "BtnRevisionGeneral";
+            this.BtnRevisionGeneral.Size = new System.Drawing.Size(148, 72);
+            this.BtnRevisionGeneral.TabIndex = 16;
+            this.BtnRevisionGeneral.Text = "Revision General";
+            this.BtnRevisionGeneral.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnRevisionGeneral.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnRevisionGeneral.UseVisualStyleBackColor = false;
+            // 
+            // BtnRevisionFrenos
+            // 
+            this.BtnRevisionFrenos.AllowDrop = true;
+            this.BtnRevisionFrenos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnRevisionFrenos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnRevisionFrenos.FlatAppearance.BorderSize = 0;
+            this.BtnRevisionFrenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRevisionFrenos.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRevisionFrenos.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnRevisionFrenos.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevisionFrenos.Image")));
+            this.BtnRevisionFrenos.Location = new System.Drawing.Point(225, 278);
+            this.BtnRevisionFrenos.Name = "BtnRevisionFrenos";
+            this.BtnRevisionFrenos.Size = new System.Drawing.Size(148, 72);
+            this.BtnRevisionFrenos.TabIndex = 17;
+            this.BtnRevisionFrenos.Text = "Revision de Frenos";
+            this.BtnRevisionFrenos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnRevisionFrenos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnRevisionFrenos.UseVisualStyleBackColor = false;
+            // 
+            // BtnRevisionSuspencion
+            // 
+            this.BtnRevisionSuspencion.AllowDrop = true;
+            this.BtnRevisionSuspencion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnRevisionSuspencion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnRevisionSuspencion.FlatAppearance.BorderSize = 0;
+            this.BtnRevisionSuspencion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRevisionSuspencion.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRevisionSuspencion.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnRevisionSuspencion.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevisionSuspencion.Image")));
+            this.BtnRevisionSuspencion.Location = new System.Drawing.Point(383, 278);
+            this.BtnRevisionSuspencion.Name = "BtnRevisionSuspencion";
+            this.BtnRevisionSuspencion.Size = new System.Drawing.Size(148, 72);
+            this.BtnRevisionSuspencion.TabIndex = 18;
+            this.BtnRevisionSuspencion.Text = "Revision de Suspension";
+            this.BtnRevisionSuspencion.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnRevisionSuspencion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnRevisionSuspencion.UseVisualStyleBackColor = false;
+            // 
+            // BtnServicioEscaner
+            // 
+            this.BtnServicioEscaner.AllowDrop = true;
+            this.BtnServicioEscaner.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnServicioEscaner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnServicioEscaner.FlatAppearance.BorderSize = 0;
+            this.BtnServicioEscaner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnServicioEscaner.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnServicioEscaner.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnServicioEscaner.Image = ((System.Drawing.Image)(resources.GetObject("BtnServicioEscaner.Image")));
+            this.BtnServicioEscaner.Location = new System.Drawing.Point(560, 278);
+            this.BtnServicioEscaner.Name = "BtnServicioEscaner";
+            this.BtnServicioEscaner.Size = new System.Drawing.Size(148, 72);
+            this.BtnServicioEscaner.TabIndex = 19;
+            this.BtnServicioEscaner.Text = "Servicio de Escaner";
+            this.BtnServicioEscaner.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnServicioEscaner.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnServicioEscaner.UseVisualStyleBackColor = false;
+            // 
+            // BtnPeritajes
+            // 
+            this.BtnPeritajes.AllowDrop = true;
+            this.BtnPeritajes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnPeritajes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnPeritajes.FlatAppearance.BorderSize = 0;
+            this.BtnPeritajes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPeritajes.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPeritajes.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnPeritajes.Image = ((System.Drawing.Image)(resources.GetObject("BtnPeritajes.Image")));
+            this.BtnPeritajes.Location = new System.Drawing.Point(60, 366);
+            this.BtnPeritajes.Name = "BtnPeritajes";
+            this.BtnPeritajes.Size = new System.Drawing.Size(148, 72);
+            this.BtnPeritajes.TabIndex = 20;
+            this.BtnPeritajes.Text = "Peritajes";
+            this.BtnPeritajes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnPeritajes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnPeritajes.UseVisualStyleBackColor = false;
+            // 
+            // BtnRevisionKilometraje
+            // 
+            this.BtnRevisionKilometraje.AllowDrop = true;
+            this.BtnRevisionKilometraje.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnRevisionKilometraje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnRevisionKilometraje.FlatAppearance.BorderSize = 0;
+            this.BtnRevisionKilometraje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRevisionKilometraje.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRevisionKilometraje.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnRevisionKilometraje.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevisionKilometraje.Image")));
+            this.BtnRevisionKilometraje.Location = new System.Drawing.Point(225, 366);
+            this.BtnRevisionKilometraje.Name = "BtnRevisionKilometraje";
+            this.BtnRevisionKilometraje.Size = new System.Drawing.Size(148, 72);
+            this.BtnRevisionKilometraje.TabIndex = 21;
+            this.BtnRevisionKilometraje.Text = "Revision por Kilometraje";
+            this.BtnRevisionKilometraje.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnRevisionKilometraje.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnRevisionKilometraje.UseVisualStyleBackColor = false;
+            // 
+            // BtnRevisionBateria
+            // 
+            this.BtnRevisionBateria.AllowDrop = true;
+            this.BtnRevisionBateria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnRevisionBateria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnRevisionBateria.FlatAppearance.BorderSize = 0;
+            this.BtnRevisionBateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRevisionBateria.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRevisionBateria.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnRevisionBateria.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevisionBateria.Image")));
+            this.BtnRevisionBateria.Location = new System.Drawing.Point(383, 366);
+            this.BtnRevisionBateria.Name = "BtnRevisionBateria";
+            this.BtnRevisionBateria.Size = new System.Drawing.Size(148, 72);
+            this.BtnRevisionBateria.TabIndex = 22;
+            this.BtnRevisionBateria.Text = "Revision de Bateria";
+            this.BtnRevisionBateria.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnRevisionBateria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnRevisionBateria.UseVisualStyleBackColor = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.DimGray;
+            this.label10.Location = new System.Drawing.Point(57, 33);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(133, 16);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "SERVICIOS LIGEROS";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.DimGray;
+            this.label11.Location = new System.Drawing.Point(57, 246);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(142, 16);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "REVISIONES AMPLIAS";
+            // 
+            // BtnSincronizacion
+            // 
+            this.BtnSincronizacion.AllowDrop = true;
+            this.BtnSincronizacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnSincronizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnSincronizacion.FlatAppearance.BorderSize = 0;
+            this.BtnSincronizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSincronizacion.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSincronizacion.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnSincronizacion.Image = ((System.Drawing.Image)(resources.GetObject("BtnSincronizacion.Image")));
+            this.BtnSincronizacion.Location = new System.Drawing.Point(69, 502);
+            this.BtnSincronizacion.Name = "BtnSincronizacion";
+            this.BtnSincronizacion.Size = new System.Drawing.Size(148, 72);
+            this.BtnSincronizacion.TabIndex = 25;
+            this.BtnSincronizacion.Text = "Sincronizacion";
+            this.BtnSincronizacion.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnSincronizacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnSincronizacion.UseVisualStyleBackColor = false;
+            // 
+            // BtnDiscosFrenos
+            // 
+            this.BtnDiscosFrenos.AllowDrop = true;
+            this.BtnDiscosFrenos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnDiscosFrenos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnDiscosFrenos.FlatAppearance.BorderSize = 0;
+            this.BtnDiscosFrenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDiscosFrenos.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDiscosFrenos.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnDiscosFrenos.Image = ((System.Drawing.Image)(resources.GetObject("BtnDiscosFrenos.Image")));
+            this.BtnDiscosFrenos.Location = new System.Drawing.Point(383, 502);
+            this.BtnDiscosFrenos.Name = "BtnDiscosFrenos";
+            this.BtnDiscosFrenos.Size = new System.Drawing.Size(148, 72);
+            this.BtnDiscosFrenos.TabIndex = 26;
+            this.BtnDiscosFrenos.Text = "Discos de Frenos";
+            this.BtnDiscosFrenos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnDiscosFrenos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnDiscosFrenos.UseVisualStyleBackColor = false;
+            // 
+            // BtnCorreaReparticion
+            // 
+            this.BtnCorreaReparticion.AllowDrop = true;
+            this.BtnCorreaReparticion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnCorreaReparticion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnCorreaReparticion.FlatAppearance.BorderSize = 0;
+            this.BtnCorreaReparticion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCorreaReparticion.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCorreaReparticion.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnCorreaReparticion.Image = ((System.Drawing.Image)(resources.GetObject("BtnCorreaReparticion.Image")));
+            this.BtnCorreaReparticion.Location = new System.Drawing.Point(132, 622);
+            this.BtnCorreaReparticion.Name = "BtnCorreaReparticion";
+            this.BtnCorreaReparticion.Size = new System.Drawing.Size(148, 72);
+            this.BtnCorreaReparticion.TabIndex = 27;
+            this.BtnCorreaReparticion.Text = "Correa de Reparticion";
+            this.BtnCorreaReparticion.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnCorreaReparticion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnCorreaReparticion.UseVisualStyleBackColor = false;
+            // 
+            // BtnKitEmbrague
+            // 
+            this.BtnKitEmbrague.AllowDrop = true;
+            this.BtnKitEmbrague.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnKitEmbrague.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnKitEmbrague.FlatAppearance.BorderSize = 0;
+            this.BtnKitEmbrague.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnKitEmbrague.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnKitEmbrague.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnKitEmbrague.Image = ((System.Drawing.Image)(resources.GetObject("BtnKitEmbrague.Image")));
+            this.BtnKitEmbrague.Location = new System.Drawing.Point(479, 622);
+            this.BtnKitEmbrague.Name = "BtnKitEmbrague";
+            this.BtnKitEmbrague.Size = new System.Drawing.Size(148, 72);
+            this.BtnKitEmbrague.TabIndex = 28;
+            this.BtnKitEmbrague.Text = "Kit de Embrague";
+            this.BtnKitEmbrague.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnKitEmbrague.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnKitEmbrague.UseVisualStyleBackColor = false;
+            // 
+            // BtnPastillasFrenos
+            // 
+            this.BtnPastillasFrenos.AllowDrop = true;
+            this.BtnPastillasFrenos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnPastillasFrenos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnPastillasFrenos.FlatAppearance.BorderSize = 0;
+            this.BtnPastillasFrenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPastillasFrenos.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPastillasFrenos.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnPastillasFrenos.Image = ((System.Drawing.Image)(resources.GetObject("BtnPastillasFrenos.Image")));
+            this.BtnPastillasFrenos.Location = new System.Drawing.Point(225, 502);
+            this.BtnPastillasFrenos.Name = "BtnPastillasFrenos";
+            this.BtnPastillasFrenos.Size = new System.Drawing.Size(148, 72);
+            this.BtnPastillasFrenos.TabIndex = 29;
+            this.BtnPastillasFrenos.Text = "Pastillas de Frenos";
+            this.BtnPastillasFrenos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnPastillasFrenos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnPastillasFrenos.UseVisualStyleBackColor = false;
+            // 
+            // BtnAmortiguadores
+            // 
+            this.BtnAmortiguadores.AllowDrop = true;
+            this.BtnAmortiguadores.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnAmortiguadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnAmortiguadores.FlatAppearance.BorderSize = 0;
+            this.BtnAmortiguadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAmortiguadores.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAmortiguadores.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnAmortiguadores.Image = ((System.Drawing.Image)(resources.GetObject("BtnAmortiguadores.Image")));
+            this.BtnAmortiguadores.Location = new System.Drawing.Point(560, 502);
+            this.BtnAmortiguadores.Name = "BtnAmortiguadores";
+            this.BtnAmortiguadores.Size = new System.Drawing.Size(148, 72);
+            this.BtnAmortiguadores.TabIndex = 30;
+            this.BtnAmortiguadores.Text = "Amortiguadores";
+            this.BtnAmortiguadores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAmortiguadores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnAmortiguadores.UseVisualStyleBackColor = false;
+            // 
+            // BtnCambioBateria
+            // 
+            this.BtnCambioBateria.AllowDrop = true;
+            this.BtnCambioBateria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnCambioBateria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnCambioBateria.FlatAppearance.BorderSize = 0;
+            this.BtnCambioBateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCambioBateria.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCambioBateria.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnCambioBateria.Image = ((System.Drawing.Image)(resources.GetObject("BtnCambioBateria.Image")));
+            this.BtnCambioBateria.Location = new System.Drawing.Point(311, 622);
+            this.BtnCambioBateria.Name = "BtnCambioBateria";
+            this.BtnCambioBateria.Size = new System.Drawing.Size(148, 72);
+            this.BtnCambioBateria.TabIndex = 31;
+            this.BtnCambioBateria.Text = "Cambio de Bateria";
+            this.BtnCambioBateria.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnCambioBateria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnCambioBateria.UseVisualStyleBackColor = false;
+            this.BtnCambioBateria.Click += new System.EventHandler(this.BtnCambioBateria_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
+            this.label12.Location = new System.Drawing.Point(57, 474);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(81, 16);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "MECANICA";
+            // 
+            // shapeContainer2
+            // 
+            this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer2.Name = "shapeContainer2";
+            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape4});
+            this.shapeContainer2.Size = new System.Drawing.Size(867, 877);
+            this.shapeContainer2.TabIndex = 8;
+            this.shapeContainer2.TabStop = false;
             // 
             // FrmCotizacion
             // 
@@ -515,10 +972,11 @@ namespace PresentacionGui
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(867, 798);
+            this.ClientSize = new System.Drawing.Size(867, 877);
             this.Controls.Add(this.TCDatosCotizacion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnCancelar);
+            this.Controls.Add(this.shapeContainer2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCotizacion";
             this.Text = "FrmCotizacion";
@@ -557,12 +1015,36 @@ namespace PresentacionGui
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox CmbModelo;
         private System.Windows.Forms.ComboBox CmbMarca;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button BtnCambioDeAceite;
+        private System.Windows.Forms.Button BtnLatoneriaPintura;
+        private System.Windows.Forms.Button BtnCambioAceite;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.Button BtnAlineacionBalanceo;
+        private System.Windows.Forms.Button BtnAireAcondicionado;
+        private System.Windows.Forms.Button BtnCambioPlumillas;
+        private System.Windows.Forms.Button BtnCambioLlanta;
+        private System.Windows.Forms.Button BtnLiquidoFrenos;
+        private System.Windows.Forms.Button BtnLiquidoRefrigerante;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button BtnCambioBateria;
+        private System.Windows.Forms.Button BtnAmortiguadores;
+        private System.Windows.Forms.Button BtnPastillasFrenos;
+        private System.Windows.Forms.Button BtnKitEmbrague;
+        private System.Windows.Forms.Button BtnCorreaReparticion;
+        private System.Windows.Forms.Button BtnDiscosFrenos;
+        private System.Windows.Forms.Button BtnSincronizacion;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button BtnRevisionBateria;
+        private System.Windows.Forms.Button BtnRevisionKilometraje;
+        private System.Windows.Forms.Button BtnPeritajes;
+        private System.Windows.Forms.Button BtnServicioEscaner;
+        private System.Windows.Forms.Button BtnRevisionSuspencion;
+        private System.Windows.Forms.Button BtnRevisionFrenos;
+        private System.Windows.Forms.Button BtnRevisionGeneral;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
     }
 }
