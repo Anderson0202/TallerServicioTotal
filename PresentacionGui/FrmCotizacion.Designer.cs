@@ -214,7 +214,7 @@ namespace PresentacionGui
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(771, 755);
+            this.tabPage1.Size = new System.Drawing.Size(720, 755);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "VEHICULO";
             // 
@@ -932,7 +932,7 @@ namespace PresentacionGui
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(771, 755);
+            this.tabPage3.Size = new System.Drawing.Size(720, 755);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "AGENDA";
             // 
@@ -942,7 +942,7 @@ namespace PresentacionGui
             this.tabPage4.Controls.Add(this.label6);
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(771, 755);
+            this.tabPage4.Size = new System.Drawing.Size(720, 755);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "CONTACTO";
             // 
@@ -959,22 +959,24 @@ namespace PresentacionGui
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(302, 837);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(783, 94);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(263, 20);
             this.textBox1.TabIndex = 9;
             // 
             // label13
             // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(576, 838);
+            this.label13.Location = new System.Drawing.Point(862, 59);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(191, 16);
+            this.label13.Size = new System.Drawing.Size(119, 16);
             this.label13.TabIndex = 33;
-            this.label13.Text = "ELIGA EL SERVICIO DESEADO";
+            this.label13.Text = "TOTAL COTIZADO";
             // 
             // FrmCotizacion
             // 

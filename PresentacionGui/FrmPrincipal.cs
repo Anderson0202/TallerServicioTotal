@@ -172,6 +172,20 @@ namespace PresentacionGui
         private void BtnPbxMinimizar_MouseHover(object sender, EventArgs e){/*no tocar*/}
         private void BtnPbxMinimizar_MouseMove(object sender, MouseEventArgs e){/*no tocar*/}
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmDiagnostico>();
+            button7.BackColor = Color.FromArgb(32, 178, 170);
+            EsconderSubMenus();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmFacturar>();
+            button3.BackColor = Color.FromArgb(32, 178, 170);
+            EsconderSubMenus();
+        }
+
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario;
@@ -200,6 +214,8 @@ namespace PresentacionGui
             if (Application.OpenForms["FrmCotizacion"] == null)
             {
                 BtnCotizar.BackColor = Color.FromArgb(15, 15, 15);
+                button3.BackColor = Color.FromArgb(15, 15, 15);
+                button7.BackColor = Color.FromArgb(15, 15, 15);
             }
         }
 

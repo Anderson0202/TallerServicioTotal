@@ -50,6 +50,7 @@ namespace PresentacionGui
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -70,7 +71,7 @@ namespace PresentacionGui
             this.dataGridView1.Location = new System.Drawing.Point(227, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(617, 169);
+            this.dataGridView1.Size = new System.Drawing.Size(660, 169);
             this.dataGridView1.TabIndex = 45;
             // 
             // label10
@@ -90,26 +91,28 @@ namespace PresentacionGui
             this.ColTipo.HeaderText = "TIPO";
             this.ColTipo.Name = "ColTipo";
             this.ColTipo.ReadOnly = true;
+            this.ColTipo.Width = 58;
             // 
             // ColEscaner
             // 
             this.ColEscaner.HeaderText = "ESCANER";
             this.ColEscaner.Name = "ColEscaner";
             this.ColEscaner.ReadOnly = true;
-            this.ColEscaner.Width = 160;
+            this.ColEscaner.Width = 85;
             // 
             // ColCantidad
             // 
             this.ColCantidad.HeaderText = "CANTIDAD";
             this.ColCantidad.Name = "ColCantidad";
             this.ColCantidad.ReadOnly = true;
+            this.ColCantidad.Width = 93;
             // 
             // ColImporte
             // 
             this.ColImporte.HeaderText = "IMPORTE";
             this.ColImporte.Name = "ColImporte";
             this.ColImporte.ReadOnly = true;
-            this.ColImporte.Width = 120;
+            this.ColImporte.Width = 82;
             // 
             // FrmDiagnostico
             // 

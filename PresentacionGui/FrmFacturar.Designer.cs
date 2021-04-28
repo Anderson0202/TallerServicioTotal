@@ -210,7 +210,7 @@ namespace PresentacionGui
             // 
             // BtnAlineacionBalanceo
             // 
-            this.BtnAlineacionBalanceo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnAlineacionBalanceo.AutoEllipsis = true;
             this.BtnAlineacionBalanceo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.BtnAlineacionBalanceo.FlatAppearance.BorderSize = 0;
             this.BtnAlineacionBalanceo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -379,6 +379,7 @@ namespace PresentacionGui
             // 
             // label14
             // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label14.AutoSize = true;
             this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -391,6 +392,7 @@ namespace PresentacionGui
             // 
             // label15
             // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label15.AutoSize = true;
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -403,6 +405,7 @@ namespace PresentacionGui
             // 
             // textBox11
             // 
+            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBox11.Location = new System.Drawing.Point(281, 381);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(196, 20);
@@ -410,6 +413,7 @@ namespace PresentacionGui
             // 
             // textBox12
             // 
+            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBox12.Location = new System.Drawing.Point(79, 381);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(196, 20);
