@@ -79,7 +79,8 @@ namespace PresentacionGui
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.TCDatosCotizacion.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -193,7 +194,7 @@ namespace PresentacionGui
             this.TCDatosCotizacion.Location = new System.Drawing.Point(39, 33);
             this.TCDatosCotizacion.Name = "TCDatosCotizacion";
             this.TCDatosCotizacion.SelectedIndex = 0;
-            this.TCDatosCotizacion.Size = new System.Drawing.Size(779, 785);
+            this.TCDatosCotizacion.Size = new System.Drawing.Size(728, 785);
             this.TCDatosCotizacion.TabIndex = 7;
             // 
             // tabPage1
@@ -422,7 +423,7 @@ namespace PresentacionGui
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(771, 755);
+            this.tabPage2.Size = new System.Drawing.Size(720, 755);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "SERVICIO";
             // 
@@ -448,7 +449,7 @@ namespace PresentacionGui
             this.BtnCambioBateria.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCambioBateria.ForeColor = System.Drawing.Color.DimGray;
             this.BtnCambioBateria.Image = ((System.Drawing.Image)(resources.GetObject("BtnCambioBateria.Image")));
-            this.BtnCambioBateria.Location = new System.Drawing.Point(311, 622);
+            this.BtnCambioBateria.Location = new System.Drawing.Point(272, 622);
             this.BtnCambioBateria.Name = "BtnCambioBateria";
             this.BtnCambioBateria.Size = new System.Drawing.Size(148, 72);
             this.BtnCambioBateria.TabIndex = 31;
@@ -468,7 +469,7 @@ namespace PresentacionGui
             this.BtnAmortiguadores.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAmortiguadores.ForeColor = System.Drawing.Color.DimGray;
             this.BtnAmortiguadores.Image = ((System.Drawing.Image)(resources.GetObject("BtnAmortiguadores.Image")));
-            this.BtnAmortiguadores.Location = new System.Drawing.Point(560, 502);
+            this.BtnAmortiguadores.Location = new System.Drawing.Point(521, 502);
             this.BtnAmortiguadores.Name = "BtnAmortiguadores";
             this.BtnAmortiguadores.Size = new System.Drawing.Size(148, 72);
             this.BtnAmortiguadores.TabIndex = 30;
@@ -487,7 +488,7 @@ namespace PresentacionGui
             this.BtnPastillasFrenos.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPastillasFrenos.ForeColor = System.Drawing.Color.DimGray;
             this.BtnPastillasFrenos.Image = ((System.Drawing.Image)(resources.GetObject("BtnPastillasFrenos.Image")));
-            this.BtnPastillasFrenos.Location = new System.Drawing.Point(225, 502);
+            this.BtnPastillasFrenos.Location = new System.Drawing.Point(186, 502);
             this.BtnPastillasFrenos.Name = "BtnPastillasFrenos";
             this.BtnPastillasFrenos.Size = new System.Drawing.Size(148, 72);
             this.BtnPastillasFrenos.TabIndex = 29;
@@ -506,7 +507,7 @@ namespace PresentacionGui
             this.BtnKitEmbrague.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnKitEmbrague.ForeColor = System.Drawing.Color.DimGray;
             this.BtnKitEmbrague.Image = ((System.Drawing.Image)(resources.GetObject("BtnKitEmbrague.Image")));
-            this.BtnKitEmbrague.Location = new System.Drawing.Point(479, 622);
+            this.BtnKitEmbrague.Location = new System.Drawing.Point(440, 622);
             this.BtnKitEmbrague.Name = "BtnKitEmbrague";
             this.BtnKitEmbrague.Size = new System.Drawing.Size(148, 72);
             this.BtnKitEmbrague.TabIndex = 28;
@@ -525,7 +526,7 @@ namespace PresentacionGui
             this.BtnCorreaReparticion.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCorreaReparticion.ForeColor = System.Drawing.Color.DimGray;
             this.BtnCorreaReparticion.Image = ((System.Drawing.Image)(resources.GetObject("BtnCorreaReparticion.Image")));
-            this.BtnCorreaReparticion.Location = new System.Drawing.Point(132, 622);
+            this.BtnCorreaReparticion.Location = new System.Drawing.Point(93, 622);
             this.BtnCorreaReparticion.Name = "BtnCorreaReparticion";
             this.BtnCorreaReparticion.Size = new System.Drawing.Size(148, 72);
             this.BtnCorreaReparticion.TabIndex = 27;
@@ -544,7 +545,7 @@ namespace PresentacionGui
             this.BtnDiscosFrenos.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDiscosFrenos.ForeColor = System.Drawing.Color.DimGray;
             this.BtnDiscosFrenos.Image = ((System.Drawing.Image)(resources.GetObject("BtnDiscosFrenos.Image")));
-            this.BtnDiscosFrenos.Location = new System.Drawing.Point(383, 502);
+            this.BtnDiscosFrenos.Location = new System.Drawing.Point(344, 502);
             this.BtnDiscosFrenos.Name = "BtnDiscosFrenos";
             this.BtnDiscosFrenos.Size = new System.Drawing.Size(148, 72);
             this.BtnDiscosFrenos.TabIndex = 26;
@@ -563,7 +564,7 @@ namespace PresentacionGui
             this.BtnSincronizacion.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSincronizacion.ForeColor = System.Drawing.Color.DimGray;
             this.BtnSincronizacion.Image = ((System.Drawing.Image)(resources.GetObject("BtnSincronizacion.Image")));
-            this.BtnSincronizacion.Location = new System.Drawing.Point(69, 502);
+            this.BtnSincronizacion.Location = new System.Drawing.Point(30, 502);
             this.BtnSincronizacion.Name = "BtnSincronizacion";
             this.BtnSincronizacion.Size = new System.Drawing.Size(148, 72);
             this.BtnSincronizacion.TabIndex = 25;
@@ -606,7 +607,7 @@ namespace PresentacionGui
             this.BtnRevisionBateria.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRevisionBateria.ForeColor = System.Drawing.Color.DimGray;
             this.BtnRevisionBateria.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevisionBateria.Image")));
-            this.BtnRevisionBateria.Location = new System.Drawing.Point(383, 366);
+            this.BtnRevisionBateria.Location = new System.Drawing.Point(352, 366);
             this.BtnRevisionBateria.Name = "BtnRevisionBateria";
             this.BtnRevisionBateria.Size = new System.Drawing.Size(148, 72);
             this.BtnRevisionBateria.TabIndex = 22;
@@ -625,7 +626,7 @@ namespace PresentacionGui
             this.BtnRevisionKilometraje.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRevisionKilometraje.ForeColor = System.Drawing.Color.DimGray;
             this.BtnRevisionKilometraje.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevisionKilometraje.Image")));
-            this.BtnRevisionKilometraje.Location = new System.Drawing.Point(225, 366);
+            this.BtnRevisionKilometraje.Location = new System.Drawing.Point(194, 366);
             this.BtnRevisionKilometraje.Name = "BtnRevisionKilometraje";
             this.BtnRevisionKilometraje.Size = new System.Drawing.Size(148, 72);
             this.BtnRevisionKilometraje.TabIndex = 21;
@@ -644,7 +645,7 @@ namespace PresentacionGui
             this.BtnPeritajes.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPeritajes.ForeColor = System.Drawing.Color.DimGray;
             this.BtnPeritajes.Image = ((System.Drawing.Image)(resources.GetObject("BtnPeritajes.Image")));
-            this.BtnPeritajes.Location = new System.Drawing.Point(60, 366);
+            this.BtnPeritajes.Location = new System.Drawing.Point(29, 366);
             this.BtnPeritajes.Name = "BtnPeritajes";
             this.BtnPeritajes.Size = new System.Drawing.Size(148, 72);
             this.BtnPeritajes.TabIndex = 20;
@@ -663,7 +664,7 @@ namespace PresentacionGui
             this.BtnServicioEscaner.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnServicioEscaner.ForeColor = System.Drawing.Color.DimGray;
             this.BtnServicioEscaner.Image = ((System.Drawing.Image)(resources.GetObject("BtnServicioEscaner.Image")));
-            this.BtnServicioEscaner.Location = new System.Drawing.Point(560, 278);
+            this.BtnServicioEscaner.Location = new System.Drawing.Point(529, 278);
             this.BtnServicioEscaner.Name = "BtnServicioEscaner";
             this.BtnServicioEscaner.Size = new System.Drawing.Size(148, 72);
             this.BtnServicioEscaner.TabIndex = 19;
@@ -682,7 +683,7 @@ namespace PresentacionGui
             this.BtnRevisionSuspencion.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRevisionSuspencion.ForeColor = System.Drawing.Color.DimGray;
             this.BtnRevisionSuspencion.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevisionSuspencion.Image")));
-            this.BtnRevisionSuspencion.Location = new System.Drawing.Point(383, 278);
+            this.BtnRevisionSuspencion.Location = new System.Drawing.Point(352, 278);
             this.BtnRevisionSuspencion.Name = "BtnRevisionSuspencion";
             this.BtnRevisionSuspencion.Size = new System.Drawing.Size(148, 72);
             this.BtnRevisionSuspencion.TabIndex = 18;
@@ -701,7 +702,7 @@ namespace PresentacionGui
             this.BtnRevisionFrenos.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRevisionFrenos.ForeColor = System.Drawing.Color.DimGray;
             this.BtnRevisionFrenos.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevisionFrenos.Image")));
-            this.BtnRevisionFrenos.Location = new System.Drawing.Point(225, 278);
+            this.BtnRevisionFrenos.Location = new System.Drawing.Point(194, 278);
             this.BtnRevisionFrenos.Name = "BtnRevisionFrenos";
             this.BtnRevisionFrenos.Size = new System.Drawing.Size(148, 72);
             this.BtnRevisionFrenos.TabIndex = 17;
@@ -720,7 +721,7 @@ namespace PresentacionGui
             this.BtnRevisionGeneral.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRevisionGeneral.ForeColor = System.Drawing.Color.DimGray;
             this.BtnRevisionGeneral.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevisionGeneral.Image")));
-            this.BtnRevisionGeneral.Location = new System.Drawing.Point(60, 278);
+            this.BtnRevisionGeneral.Location = new System.Drawing.Point(29, 278);
             this.BtnRevisionGeneral.Name = "BtnRevisionGeneral";
             this.BtnRevisionGeneral.Size = new System.Drawing.Size(148, 72);
             this.BtnRevisionGeneral.TabIndex = 16;
@@ -738,7 +739,7 @@ namespace PresentacionGui
             this.BtnLiquidoRefrigerante.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLiquidoRefrigerante.ForeColor = System.Drawing.Color.DimGray;
             this.BtnLiquidoRefrigerante.Image = ((System.Drawing.Image)(resources.GetObject("BtnLiquidoRefrigerante.Image")));
-            this.BtnLiquidoRefrigerante.Location = new System.Drawing.Point(311, 141);
+            this.BtnLiquidoRefrigerante.Location = new System.Drawing.Point(272, 141);
             this.BtnLiquidoRefrigerante.Name = "BtnLiquidoRefrigerante";
             this.BtnLiquidoRefrigerante.Size = new System.Drawing.Size(148, 72);
             this.BtnLiquidoRefrigerante.TabIndex = 15;
@@ -756,7 +757,7 @@ namespace PresentacionGui
             this.BtnLiquidoFrenos.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLiquidoFrenos.ForeColor = System.Drawing.Color.DimGray;
             this.BtnLiquidoFrenos.Image = ((System.Drawing.Image)(resources.GetObject("BtnLiquidoFrenos.Image")));
-            this.BtnLiquidoFrenos.Location = new System.Drawing.Point(132, 141);
+            this.BtnLiquidoFrenos.Location = new System.Drawing.Point(93, 141);
             this.BtnLiquidoFrenos.Name = "BtnLiquidoFrenos";
             this.BtnLiquidoFrenos.Size = new System.Drawing.Size(148, 72);
             this.BtnLiquidoFrenos.TabIndex = 14;
@@ -774,7 +775,7 @@ namespace PresentacionGui
             this.BtnAireAcondicionado.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAireAcondicionado.ForeColor = System.Drawing.Color.DimGray;
             this.BtnAireAcondicionado.Image = ((System.Drawing.Image)(resources.GetObject("BtnAireAcondicionado.Image")));
-            this.BtnAireAcondicionado.Location = new System.Drawing.Point(560, 63);
+            this.BtnAireAcondicionado.Location = new System.Drawing.Point(521, 63);
             this.BtnAireAcondicionado.Name = "BtnAireAcondicionado";
             this.BtnAireAcondicionado.Size = new System.Drawing.Size(148, 72);
             this.BtnAireAcondicionado.TabIndex = 13;
@@ -792,7 +793,7 @@ namespace PresentacionGui
             this.BtnCambioPlumillas.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCambioPlumillas.ForeColor = System.Drawing.Color.DimGray;
             this.BtnCambioPlumillas.Image = ((System.Drawing.Image)(resources.GetObject("BtnCambioPlumillas.Image")));
-            this.BtnCambioPlumillas.Location = new System.Drawing.Point(383, 63);
+            this.BtnCambioPlumillas.Location = new System.Drawing.Point(344, 63);
             this.BtnCambioPlumillas.Name = "BtnCambioPlumillas";
             this.BtnCambioPlumillas.Size = new System.Drawing.Size(148, 72);
             this.BtnCambioPlumillas.TabIndex = 12;
@@ -811,7 +812,7 @@ namespace PresentacionGui
             this.BtnCambioLlanta.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCambioLlanta.ForeColor = System.Drawing.Color.DimGray;
             this.BtnCambioLlanta.Image = ((System.Drawing.Image)(resources.GetObject("BtnCambioLlanta.Image")));
-            this.BtnCambioLlanta.Location = new System.Drawing.Point(225, 63);
+            this.BtnCambioLlanta.Location = new System.Drawing.Point(186, 63);
             this.BtnCambioLlanta.Name = "BtnCambioLlanta";
             this.BtnCambioLlanta.Size = new System.Drawing.Size(148, 72);
             this.BtnCambioLlanta.TabIndex = 11;
@@ -829,7 +830,7 @@ namespace PresentacionGui
             this.BtnAlineacionBalanceo.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAlineacionBalanceo.ForeColor = System.Drawing.Color.DimGray;
             this.BtnAlineacionBalanceo.Image = ((System.Drawing.Image)(resources.GetObject("BtnAlineacionBalanceo.Image")));
-            this.BtnAlineacionBalanceo.Location = new System.Drawing.Point(60, 63);
+            this.BtnAlineacionBalanceo.Location = new System.Drawing.Point(21, 63);
             this.BtnAlineacionBalanceo.Name = "BtnAlineacionBalanceo";
             this.BtnAlineacionBalanceo.Size = new System.Drawing.Size(148, 72);
             this.BtnAlineacionBalanceo.TabIndex = 10;
@@ -847,7 +848,7 @@ namespace PresentacionGui
             this.BtnLatoneriaPintura.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLatoneriaPintura.ForeColor = System.Drawing.Color.DimGray;
             this.BtnLatoneriaPintura.Image = ((System.Drawing.Image)(resources.GetObject("BtnLatoneriaPintura.Image")));
-            this.BtnLatoneriaPintura.Location = new System.Drawing.Point(560, 366);
+            this.BtnLatoneriaPintura.Location = new System.Drawing.Point(529, 366);
             this.BtnLatoneriaPintura.Name = "BtnLatoneriaPintura";
             this.BtnLatoneriaPintura.Size = new System.Drawing.Size(148, 72);
             this.BtnLatoneriaPintura.TabIndex = 6;
@@ -867,7 +868,7 @@ namespace PresentacionGui
             this.BtnCambioAceite.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCambioAceite.ForeColor = System.Drawing.Color.DimGray;
             this.BtnCambioAceite.Image = ((System.Drawing.Image)(resources.GetObject("BtnCambioAceite.Image")));
-            this.BtnCambioAceite.Location = new System.Drawing.Point(479, 141);
+            this.BtnCambioAceite.Location = new System.Drawing.Point(440, 141);
             this.BtnCambioAceite.Name = "BtnCambioAceite";
             this.BtnCambioAceite.Size = new System.Drawing.Size(148, 72);
             this.BtnCambioAceite.TabIndex = 5;
@@ -883,10 +884,11 @@ namespace PresentacionGui
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape4,
             this.lineShape2,
             this.lineShape3,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(765, 749);
+            this.shapeContainer1.Size = new System.Drawing.Size(714, 749);
             this.shapeContainer1.TabIndex = 9;
             this.shapeContainer1.TabStop = false;
             // 
@@ -895,8 +897,8 @@ namespace PresentacionGui
             this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
             this.lineShape2.Enabled = false;
             this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 54;
-            this.lineShape2.X2 = 720;
+            this.lineShape2.X1 = 22;
+            this.lineShape2.X2 = 688;
             this.lineShape2.Y1 = 495;
             this.lineShape2.Y2 = 495;
             this.lineShape2.Click += new System.EventHandler(this.lineShape1_Click);
@@ -906,8 +908,8 @@ namespace PresentacionGui
             this.lineShape3.BorderColor = System.Drawing.Color.DimGray;
             this.lineShape3.Enabled = false;
             this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 57;
-            this.lineShape3.X2 = 723;
+            this.lineShape3.X1 = 25;
+            this.lineShape3.X2 = 691;
             this.lineShape3.Y1 = 49;
             this.lineShape3.Y2 = 49;
             this.lineShape3.Click += new System.EventHandler(this.lineShape1_Click);
@@ -917,8 +919,8 @@ namespace PresentacionGui
             this.lineShape1.BorderColor = System.Drawing.Color.DimGray;
             this.lineShape1.Enabled = false;
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 54;
-            this.lineShape1.X2 = 720;
+            this.lineShape1.X1 = 22;
+            this.lineShape1.X2 = 688;
             this.lineShape1.Y1 = 265;
             this.lineShape1.Y2 = 265;
             this.lineShape1.Click += new System.EventHandler(this.lineShape1_Click);
@@ -949,22 +951,30 @@ namespace PresentacionGui
             this.lineShape4.BorderColor = System.Drawing.Color.DimGray;
             this.lineShape4.Enabled = false;
             this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 388;
-            this.lineShape4.X2 = 455;
-            this.lineShape4.Y1 = 848;
-            this.lineShape4.Y2 = 848;
+            this.lineShape4.X1 = 349;
+            this.lineShape4.X2 = 416;
+            this.lineShape4.Y1 = 736;
+            this.lineShape4.Y2 = 736;
             this.lineShape4.Click += new System.EventHandler(this.lineShape1_Click);
             // 
-            // shapeContainer2
+            // textBox1
             // 
-            this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer2.Name = "shapeContainer2";
-            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape4});
-            this.shapeContainer2.Size = new System.Drawing.Size(867, 877);
-            this.shapeContainer2.TabIndex = 8;
-            this.shapeContainer2.TabStop = false;
+            this.textBox1.Location = new System.Drawing.Point(302, 837);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(263, 20);
+            this.textBox1.TabIndex = 9;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.DimGray;
+            this.label13.Location = new System.Drawing.Point(576, 838);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(191, 16);
+            this.label13.TabIndex = 33;
+            this.label13.Text = "ELIGA EL SERVICIO DESEADO";
             // 
             // FrmCotizacion
             // 
@@ -972,11 +982,12 @@ namespace PresentacionGui
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(867, 877);
+            this.ClientSize = new System.Drawing.Size(1077, 877);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TCDatosCotizacion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnCancelar);
-            this.Controls.Add(this.shapeContainer2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCotizacion";
             this.Text = "FrmCotizacion";
@@ -1045,6 +1056,7 @@ namespace PresentacionGui
         private System.Windows.Forms.Button BtnRevisionFrenos;
         private System.Windows.Forms.Button BtnRevisionGeneral;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label13;
     }
 }

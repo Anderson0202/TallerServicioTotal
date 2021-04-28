@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PresentacionGui
 {
-    public partial class FrmFacturar : Form
+    public partial class FrmDiagnostico : Form
     {
-        public FrmFacturar()
+        public FrmDiagnostico()
         {
             InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
