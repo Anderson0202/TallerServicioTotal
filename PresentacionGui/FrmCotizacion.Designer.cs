@@ -73,14 +73,15 @@ namespace PresentacionGui
             this.BtnLatoneriaPintura = new System.Windows.Forms.Button();
             this.BtnCambioAceite = new System.Windows.Forms.Button();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.TCDatosCotizacion.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -139,7 +140,7 @@ namespace PresentacionGui
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(70, 59);
+            this.label3.Location = new System.Drawing.Point(148, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 16);
             this.label3.TabIndex = 3;
@@ -224,7 +225,7 @@ namespace PresentacionGui
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DimGray;
-            this.label9.Location = new System.Drawing.Point(48, 230);
+            this.label9.Location = new System.Drawing.Point(126, 230);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 16);
             this.label9.TabIndex = 10;
@@ -259,9 +260,9 @@ namespace PresentacionGui
             "",
             "",
             ""});
-            this.CmbCilindraje.Location = new System.Drawing.Point(147, 227);
+            this.CmbCilindraje.Location = new System.Drawing.Point(225, 227);
             this.CmbCilindraje.Name = "CmbCilindraje";
-            this.CmbCilindraje.Size = new System.Drawing.Size(185, 25);
+            this.CmbCilindraje.Size = new System.Drawing.Size(317, 25);
             this.CmbCilindraje.TabIndex = 9;
             // 
             // label8
@@ -270,7 +271,7 @@ namespace PresentacionGui
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(87, 176);
+            this.label8.Location = new System.Drawing.Point(165, 176);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(34, 16);
             this.label8.TabIndex = 8;
@@ -305,9 +306,9 @@ namespace PresentacionGui
             "",
             "",
             ""});
-            this.CmbYear.Location = new System.Drawing.Point(147, 167);
+            this.CmbYear.Location = new System.Drawing.Point(225, 167);
             this.CmbYear.Name = "CmbYear";
-            this.CmbYear.Size = new System.Drawing.Size(185, 25);
+            this.CmbYear.Size = new System.Drawing.Size(317, 25);
             this.CmbYear.TabIndex = 7;
             // 
             // label7
@@ -316,7 +317,7 @@ namespace PresentacionGui
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DimGray;
-            this.label7.Location = new System.Drawing.Point(64, 114);
+            this.label7.Location = new System.Drawing.Point(142, 114);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 16);
             this.label7.TabIndex = 6;
@@ -351,9 +352,9 @@ namespace PresentacionGui
             "",
             "",
             ""});
-            this.CmbModelo.Location = new System.Drawing.Point(147, 111);
+            this.CmbModelo.Location = new System.Drawing.Point(225, 111);
             this.CmbModelo.Name = "CmbModelo";
-            this.CmbModelo.Size = new System.Drawing.Size(185, 25);
+            this.CmbModelo.Size = new System.Drawing.Size(317, 25);
             this.CmbModelo.TabIndex = 5;
             // 
             // CmbMarca
@@ -385,9 +386,9 @@ namespace PresentacionGui
             "",
             "",
             ""});
-            this.CmbMarca.Location = new System.Drawing.Point(147, 59);
+            this.CmbMarca.Location = new System.Drawing.Point(225, 59);
             this.CmbMarca.Name = "CmbMarca";
-            this.CmbMarca.Size = new System.Drawing.Size(185, 25);
+            this.CmbMarca.Size = new System.Drawing.Size(317, 25);
             this.CmbMarca.TabIndex = 4;
             // 
             // tabPage2
@@ -892,6 +893,17 @@ namespace PresentacionGui
             this.shapeContainer1.TabIndex = 9;
             this.shapeContainer1.TabStop = false;
             // 
+            // lineShape4
+            // 
+            this.lineShape4.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape4.Enabled = false;
+            this.lineShape4.Name = "lineShape4";
+            this.lineShape4.X1 = 349;
+            this.lineShape4.X2 = 416;
+            this.lineShape4.Y1 = 736;
+            this.lineShape4.Y2 = 736;
+            this.lineShape4.Click += new System.EventHandler(this.lineShape1_Click);
+            // 
             // lineShape2
             // 
             this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
@@ -946,17 +958,6 @@ namespace PresentacionGui
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "CONTACTO";
             // 
-            // lineShape4
-            // 
-            this.lineShape4.BorderColor = System.Drawing.Color.DimGray;
-            this.lineShape4.Enabled = false;
-            this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 349;
-            this.lineShape4.X2 = 416;
-            this.lineShape4.Y1 = 736;
-            this.lineShape4.Y2 = 736;
-            this.lineShape4.Click += new System.EventHandler(this.lineShape1_Click);
-            // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -978,6 +979,19 @@ namespace PresentacionGui
             this.label13.TabIndex = 33;
             this.label13.Text = "TOTAL COTIZADO";
             // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.DimGray;
+            this.label14.Location = new System.Drawing.Point(862, 173);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(119, 16);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "TOTAL COTIZADO";
+            // 
             // FrmCotizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -985,6 +999,7 @@ namespace PresentacionGui
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(1077, 877);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TCDatosCotizacion);
@@ -1060,5 +1075,6 @@ namespace PresentacionGui
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }

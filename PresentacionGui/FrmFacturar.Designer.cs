@@ -64,6 +64,7 @@ namespace PresentacionGui
             this.label15 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -419,12 +420,25 @@ namespace PresentacionGui
             this.textBox12.Size = new System.Drawing.Size(196, 20);
             this.textBox12.TabIndex = 47;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
+            this.label12.Location = new System.Drawing.Point(5, 155);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(68, 16);
+            this.label12.TabIndex = 53;
+            this.label12.Text = "SERVICIO";
+            // 
             // FrmFacturar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(979, 559);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.textBox11);
@@ -495,5 +509,6 @@ namespace PresentacionGui
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label12;
     }
 }
