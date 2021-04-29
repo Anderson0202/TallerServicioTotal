@@ -11,6 +11,7 @@ namespace Entity
         public string Codigo { get; set; }
         public string IdCliente { get; set; }
         public Persona Persona { get; set; }
+        public Vehiculo Vehiculo { get; set; }
         public DateTime Fecha { get; set; }
         public Servicio Servicio { get; set; }
         public List<DetalleFactura> DetallesFactura { get; set; }

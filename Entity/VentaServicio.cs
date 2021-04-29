@@ -8,9 +8,9 @@ namespace Entity
 {
     public class VentaServicio : Factura
     {
-        public VentaServicio(Cliente persona)
+        public VentaServicio(Persona cliente)
         {
-            Persona = persona;
+            Persona = cliente;
         }
 
     }

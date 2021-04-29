@@ -21,7 +21,6 @@ namespace Entity
         /*public void AgregarDetalleFactura()
         {
             Factura factura = new Factura();
-
         }*/
 
     }
