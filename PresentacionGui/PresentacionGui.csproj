@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmConsultarAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarAgenda.Designer.cs">
+      <DependentUpon>FrmConsultarAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarMecanico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarMecanico.Designer.cs">
+      <DependentUpon>FrmConsultarMecanico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,8 +91,26 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRegistrarDiagnostico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarDiagnostico.Designer.cs">
+      <DependentUpon>FrmRegistrarDiagnostico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarMecanico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarMecanico.Designer.cs">
+      <DependentUpon>FrmRegistrarMecanico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmConsultarAgenda.resx">
+      <DependentUpon>FrmConsultarAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarMecanico.resx">
+      <DependentUpon>FrmConsultarMecanico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCotizacion.resx">
       <DependentUpon>FrmCotizacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +125,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarDiagnostico.resx">
+      <DependentUpon>FrmRegistrarDiagnostico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarMecanico.resx">
+      <DependentUpon>FrmRegistrarMecanico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

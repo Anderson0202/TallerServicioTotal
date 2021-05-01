@@ -496,4 +496,30 @@
   <metadata name="lineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>666, 0</value>
   </metadata>
+  <metadata name="ColTipo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColEscaner.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColCantidad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColImporte.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAEsSURBVFhH7ZZPKwVRGMafUhcXC/83JFlJvoPV1cyYK4v5PsfMdSVl4TvYzE5KKVFSdiSxksRG
+        fAiek0cRyzvvTZ1fvU29T9PznPfMmRkEAoFOE6E9voJ8L4UbU8uWBEWZIH9niMsEm8Nq2+FXzhA3PkSM
+        4noN7VFJdjTgJhjgtquTaGJjkgHuPkOsXzSxNSTJjghuigHufQjWeQY3KMmOVbSmaf6gEMcZdvol2RGj
+        NUPzRx8iRn60BNcn6TdKWnEVZYayR5Y/+fuGzhZPxmGE3V5ZVg/HvkjjNwXY58NYk1Q9KfIFmr5q5Qem
+        5tzreRq/yNx27BGKORo/e3PWCV/RdUnVk6KY5b4/yfzU1Pz7mWedNbA9IMmGr88xr1fLcCNq29H1H5JA
+        IPDPAD4AkiLCav8spdYAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>91</value>
+  </metadata>
 </root>

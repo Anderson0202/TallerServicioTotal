@@ -31,7 +31,10 @@ namespace PresentacionGui
         {
             PnlBtnGestionarCotizacion.Visible = false;
             PnlBtnGestionServicio.Visible = false;
-            
+            PnlPiesas.Visible = false;
+            PnlDiagnostico.Visible = false;
+            PnlMecanico.Visible = false;
+            PnlAgenda.Visible = false;
         }
 
         private void MostrarSubMenus(Panel subMenu)
@@ -175,7 +178,7 @@ namespace PresentacionGui
         private void button7_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmDiagnostico>();
-            button7.BackColor = Color.FromArgb(32, 178, 170);
+            BtnConsultarDiagnostico.BackColor = Color.FromArgb(32, 178, 170);
             EsconderSubMenus();
         }
 
@@ -183,6 +186,53 @@ namespace PresentacionGui
         {
             AbrirFormulario<FrmFacturar>();
             button3.BackColor = Color.FromArgb(32, 178, 170);
+            EsconderSubMenus();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarDiagnostico>();
+            BtnConsultarAgenda.BackColor = Color.FromArgb(32, 178, 170);
+            EsconderSubMenus();
+        }
+
+        private void PnlBtnGestionServicio_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BtnPiesas_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenus(PnlPiesas);
+        }
+
+        private void BtnAgenda_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenus(PnlAgenda);
+        }
+
+        private void BtnDiagnostico_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenus(PnlDiagnostico);
+        }
+
+        private void BtnMecanico_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenus(PnlMecanico);
+        }
+
+        private void BtnConsultarAgenda_Click(object sender, EventArgs e)
+        {
+
+            AbrirFormulario<FrmConsultarAgenda>();
+            BtnConsultarAgenda.BackColor = Color.FromArgb(32, 178, 170);
+            EsconderSubMenus();
+        }
+
+        private void BtnConsultarMecanico_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmConsultarMecanico>();
+            BtnConsultarAgenda.BackColor = Color.FromArgb(32, 178, 170);
             EsconderSubMenus();
         }
 
@@ -215,7 +265,12 @@ namespace PresentacionGui
             {
                 BtnCotizar.BackColor = Color.FromArgb(15, 15, 15);
                 button3.BackColor = Color.FromArgb(15, 15, 15);
-                button7.BackColor = Color.FromArgb(15, 15, 15);
+                BtnConsultarDiagnostico.BackColor = Color.FromArgb(15, 15, 15);
+                BtnConsultarAgenda.BackColor = Color.FromArgb(15, 15, 15);
+                BtnConsultarMecanico.BackColor = Color.FromArgb(15, 15, 15);
+                BtnConsultar.BackColor = Color.FromArgb(15, 15, 15);
+                BtnConsultarPiesa.BackColor = Color.FromArgb(15, 15, 15);
+                
             }
         }
 
