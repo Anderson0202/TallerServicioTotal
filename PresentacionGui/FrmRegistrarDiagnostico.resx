@@ -117,4 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtnCancelar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAM1JREFUOE+l
+        k00OgjAQhbvhKiYao7cqLd0JXEGvyUaIHMCtvkdaU9vRlNDkg2Fm3qM/qdJaV03T3Ky1A3gVMlBDrfJi
+        qamEq8JjTJJrGGkgFYqRDJ7gAqYoNxljWrxZi3tFg15hYG/2iGkyMfa5LupbkAzuzrldMAli5lhLekUD
+        8sCUjxRyMGYu6Vn4aQBOXq/quj77XNYrLiFa82cJMDmglh15ZgBBF8T4/tpExH3oC0gz2HyMq6BB/Ke1
+        jFzrtssUXec5Kf5jpkZrXb0Bks4Dov2CiYsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BtnCambioAceite.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAX5JREFUWEft
+        lzFLxDAYhl9xcnTyDygOjiciboKItr0bhAMVJxf/hm0qooPg6CIITk4i6KAgKLj6C5ycdHFRQU+wvskl
+        mis9KWruHPLCQ0Py5fteQtvwQSpAOhoiOSUPJPtrAiS3fC6pYnnNIh3nYsPe0ETsh0gnOK78nHgyQnLN
+        scrJ8TaQ9ejSTTHowgTYVJGM6JBSouE57tsx1LA2IOcDiBWTU8LT2KvjoFdtkuLkox1gmIEY1iGlxMQb
+        Rfs5XrbnJTS1+3kS+UWDSwOSCPGm2li0KHFtQDPfbQM33Tbw3m0DmTfQ1kAVYlplLqk6tvpCrPcbzM+G
+        fz9RlN/Q1gCR98LZLzknb6Qov+I7Ax3BG8gbuKthdVC9VQ4UQQzxpby3a7YY4Kd0pGOdSdawa+ZP4FDH
+        OZOsYdf0BrwBb8Ab+BcG7Mak0wZeONHSmh3rOGfiZXTyVS++yjenTwHiBfZ5Uy7gRbTIGs+6ViNCOqZc
+        6fb8Uk7qRZe86lOvAMAHg7KLn4KvsZQAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>
