@@ -11,9 +11,10 @@ namespace Entity
         public DateTime FechaInicio { get; set; }
         public DateTime FechaEntrega { get; set; }
         public List<Mecanico> Mecanicos { get; set; }
-        public void AgregarVehiculos(Mecanico mecanico)
+        public void AgregarMecanicos(Mecanico mecanico)
         {
             Mecanicos.Add(mecanico);
         }
+
     }
 }

@@ -16,6 +16,16 @@ namespace Entity
 
         }
 
+        public void GestionarMecanicos()
+        {
+
+        }
+
+        public void GestionarVehiculos()
+        {
+
+        }
+
         public void GestionarServicios()
         {
 

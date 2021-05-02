@@ -8,8 +8,8 @@ namespace Entity
 {
     public class Mecanico : Persona
     {
-
         public string Especialidad { get; set; }
+        public Servicio Servicio { get; set; }
         public List<Vehiculo> Vehiculos { get; set; }
         public void AgregarVehiculos(Vehiculo vehiculo)
         {

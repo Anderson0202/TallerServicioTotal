@@ -269,7 +269,7 @@ namespace PresentacionGui
                 BtnConsultarAgenda.BackColor = Color.FromArgb(15, 15, 15);
                 BtnConsultarMecanico.BackColor = Color.FromArgb(15, 15, 15);
                 BtnConsultar.BackColor = Color.FromArgb(15, 15, 15);
-                BtnConsultarPiesa.BackColor = Color.FromArgb(15, 15, 15);
+                BtnConsultarRepuesto.BackColor = Color.FromArgb(15, 15, 15);
                 
             }
         }
