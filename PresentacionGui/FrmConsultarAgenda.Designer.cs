@@ -29,33 +29,38 @@ namespace PresentacionGui
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarAgenda));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarAgenda));
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.ColVehiculo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColServicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColMecanico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(478, 9);
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label4.Location = new System.Drawing.Point(374, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 19);
+            this.label4.Size = new System.Drawing.Size(334, 32);
             this.label4.TabIndex = 5;
-            this.label4.Text = "CONSULTAR AGENDA";
+            this.label4.Text = "CONSULTAR AGENDA     ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // dataGridView1
             // 
@@ -67,7 +72,7 @@ namespace PresentacionGui
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -85,12 +90,40 @@ namespace PresentacionGui
             this.ColMecanico,
             this.ColFecha});
             this.dataGridView1.GridColor = System.Drawing.Color.Indigo;
-            this.dataGridView1.Location = new System.Drawing.Point(156, 158);
+            this.dataGridView1.Location = new System.Drawing.Point(177, 161);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(660, 253);
             this.dataGridView1.TabIndex = 46;
+            // 
+            // ColVehiculo
+            // 
+            this.ColVehiculo.HeaderText = "VEHICULO";
+            this.ColVehiculo.MinimumWidth = 6;
+            this.ColVehiculo.Name = "ColVehiculo";
+            this.ColVehiculo.ReadOnly = true;
+            // 
+            // ColServicio
+            // 
+            this.ColServicio.HeaderText = "SERVICIO";
+            this.ColServicio.MinimumWidth = 6;
+            this.ColServicio.Name = "ColServicio";
+            this.ColServicio.ReadOnly = true;
+            // 
+            // ColMecanico
+            // 
+            this.ColMecanico.HeaderText = "MECANICO";
+            this.ColMecanico.MinimumWidth = 6;
+            this.ColMecanico.Name = "ColMecanico";
+            this.ColMecanico.ReadOnly = true;
+            // 
+            // ColFecha
+            // 
+            this.ColFecha.HeaderText = "FECHA";
+            this.ColFecha.MinimumWidth = 6;
+            this.ColFecha.Name = "ColFecha";
+            this.ColFecha.ReadOnly = true;
             // 
             // label1
             // 
@@ -101,7 +134,7 @@ namespace PresentacionGui
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(190, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 19);
+            this.label1.Size = new System.Drawing.Size(75, 16);
             this.label1.TabIndex = 57;
             this.label1.Text = "SERVICIOS";
             // 
@@ -114,7 +147,7 @@ namespace PresentacionGui
             this.label15.ForeColor = System.Drawing.Color.DimGray;
             this.label15.Location = new System.Drawing.Point(286, 96);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 19);
+            this.label15.Size = new System.Drawing.Size(47, 16);
             this.label15.TabIndex = 56;
             this.label15.Text = "Fecha";
             // 
@@ -142,44 +175,12 @@ namespace PresentacionGui
             // 
             this.textBox1.Location = new System.Drawing.Point(278, 115);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 27);
+            this.textBox1.Size = new System.Drawing.Size(215, 23);
             this.textBox1.TabIndex = 54;
-            // 
-            // ColVehiculo
-            // 
-            this.ColVehiculo.HeaderText = "VEHICULO";
-            this.ColVehiculo.MinimumWidth = 6;
-            this.ColVehiculo.Name = "ColVehiculo";
-            this.ColVehiculo.ReadOnly = true;
-            this.ColVehiculo.Width = 127;
-            // 
-            // ColServicio
-            // 
-            this.ColServicio.HeaderText = "SERVICIO";
-            this.ColServicio.MinimumWidth = 6;
-            this.ColServicio.Name = "ColServicio";
-            this.ColServicio.ReadOnly = true;
-            this.ColServicio.Width = 118;
-            // 
-            // ColMecanico
-            // 
-            this.ColMecanico.HeaderText = "MECANICO";
-            this.ColMecanico.MinimumWidth = 6;
-            this.ColMecanico.Name = "ColMecanico";
-            this.ColMecanico.ReadOnly = true;
-            this.ColMecanico.Width = 139;
-            // 
-            // ColFecha
-            // 
-            this.ColFecha.HeaderText = "FECHA";
-            this.ColFecha.MinimumWidth = 6;
-            this.ColFecha.Name = "ColFecha";
-            this.ColFecha.ReadOnly = true;
-            this.ColFecha.Width = 95;
             // 
             // FrmConsultarAgenda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(1067, 588);

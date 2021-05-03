@@ -60,16 +60,18 @@ namespace PresentacionGui
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario;
-            formulario = Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario                                                                     //si el formulario/instancia no existe
+            formulario = PnlDiagnosticar.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario                                                                     //si el formulario/instancia no existe
             if (formulario == null)
             {
                 formulario = new MiForm();
                 formulario.TopLevel = false;
                 formulario.FormBorderStyle = FormBorderStyle.None;
                 formulario.Dock = DockStyle.Fill;
-                
+                PnlDiagnosticar.Controls.Add(formulario);
+                PnlDiagnosticar.Tag = formulario;
                 formulario.Show();
                 formulario.BringToFront();
+                PnlDiagnosticar.BringToFront();
                 formulario.FormClosed += new FormClosedEventHandler(CerrarFormularios);
             }
             //si el formulario/instancia existe
@@ -89,13 +91,53 @@ namespace PresentacionGui
         }
         private void BtnDiagnosticarFalla_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FrmDiagnostico>();
-            BtnDiagnosticarFalla.BackColor = Color.FromArgb(32, 178, 170);
             
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnDiagnosticarFalla_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarDiagnostico>();
+            BtnDiagnosticarFalla.BackColor = Color.FromArgb(32, 178, 170);
+            BtnVolver.Visible = true;
+            PnlDiagnosticar.Visible = true;
+        }
+
+        private void BtnVolver_Click(object sender, EventArgs e)
+        {
+            PnlDiagnosticar.Visible = false;
+            BtnDiagnosticarFalla.BackColor = Color.FromArgb(15, 15, 15);
+        }
+
+        private void BtnSiguiente_Click(object sender, EventArgs e)
+        {
+
+            if (TpVehiculo.ContainsFocus)
+            {
+                TpServicio.Focus();
+            }
+            else if (TpServicio.Focused)
+            {
+                TpAgenda.Focus();
+            }
+            else if (TpAgenda.Focused)
+            {
+                TpContacto.Focus();
+            }
+            else if (TpContacto.Focused)
+            {
+                TpVehiculo.Focus();
+            }
+            
 
         }
     }

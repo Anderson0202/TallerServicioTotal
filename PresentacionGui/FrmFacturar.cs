@@ -21,5 +21,36 @@ namespace PresentacionGui
         {
 
         }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarServicio>();
+           
+        }
+
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario;
+            formulario = PnlAgregarServicio.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario                                                                     //si el formulario/instancia no existe
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                PnlAgregarServicio.Controls.Add(formulario);
+                PnlAgregarServicio.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+                
+            }
+            //si el formulario/instancia existe
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+
+        
     }
 }

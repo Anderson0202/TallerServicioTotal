@@ -118,6 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAPxSURBVHhe7ZrLa9RQFMZPfYGKKKj42ulKEVSKgqigKJXppIMuiv4DKoqPhUiFKuZhiyIUXLZL
+        UQTRbsSF/gG+UGpxISoWpF1I6UYFF9Y6fidzatNxcpMpZI7TuT/4yOTkntx7v8zNndwJWSyWmpCnoBN6
+        nVKdkjZ7QKf68uQXyzpaQWGZPkmbPXCnuHOyG0vDGNBO7oJW8i8h3smfJdw4BmC/o9RZv9hKwQUJ148B
+        Dl3dgcY+gUYnO5JGkk64+hen4kGHhMWA1BrFeR63kb9d0muDQ95+VD4OjTnk38e2N4XeQSmHQFi20jmm
+        Seoeg9AWb5+cIntQ4UdouEDuWgklUj4E4uAy1QwBfBPXIWcEei+hbDlIXWu4kRi3VySUiqwMYJDjcV6B
+        ulZJKDtQUTNXBgNOSCjkMHUvl4/TaKEbi1vJ3Yqcfs6TcCxchstyThu5iyRshNsiec0Syg6uhCuLGoDx
+        l0fsNxq9WkJ/wdV8K40TBbfNmiqLOgblNEbUDeAr1UZBi+xOgzshjZuBggE5jRF1A0zwEMiTux4m7UaH
+        CmlUKhvm1MsQ8PdAQ2jwCgnVFHUDSjODh9p750uopqgboI26ATlyNyH2iMe7hGqKugG4YW1mAwp0fYmE
+        aoq6AdqoG9DwN0Hs8zT4JWkazFGwAeUeQB+gT5UVDECXXXLnSFoi6gakgR95kTcE/YBeGRQ+NvOjsqQm
+        om4A/2KL+yk8SY68HOc55B2TUAzFJnwDeHH0swQSUTfA9DBUotjkkP8QZSbSPLKWFkrCOhwJGVE3gIl7
+        HGbQ+dOcg+1NCRnJUfdKlB+GRtMsuvzXBhyga0tR/juu6ku+Dxwid1k73Zsrh/9h8niO/F3I+wX1yqFY
+        1A0wDQF0ZFupccFJ3sfnEb7LhwcrED2OLWYE70V4wIC6AaabYHl5DIOdpvtA9DjywpkhPGBA3QAT1ZaP
+        grz6MAD7sesB0fL4Sm+U/UTJjbA+DDD9FI6Wx5Y7xA1NVKR8fQ8BWUafgN5A36Cn0PE4YbY4i220fL+c
+        KhZ1A5LWA/DVP4/jX5EzyGUlHEu15dUNsOsByqgbYNcDUq4HZIW6AdqoG5BmPSBL1A1IXg/IFnUDmLjH
+        YczpZa/BzUjG9watAdoGNPwQaPiboIkKX+eqJKcxom4A9g3rAZU7llZyGiPqBtj3A5RRN8C+H9BI6wGY
+        6/mlR67slITU4bZwmxzyt0goO3jOR2XjDgW3JKQOZgt+wfJnO/UslFC2oLK70AQqPqM17hmuGxfiHLcF
+        V/+OhLOH53tU+hzioaAuh7xnpj9nM2EvufNQ+VHM/z3YVnyfP3t5Pej8EdOfrRaLxWKxxEH0B9XQcMex
+        BMOnAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="BtnAlineacionBalanceo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAnJJREFUWEft
@@ -149,7 +172,7 @@
   <metadata name="ColImporte.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnAgregar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAsdJREFUWEft
         VjmI1GAUfipiISp4Fl5oIbZq7wHLSOYSjwUbKzsbETuRJcc4rCxY2Am2HjsgFq6FoKV4LiqKiKBo4Yqr

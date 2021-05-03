@@ -40,7 +40,7 @@ namespace PresentacionGui
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.TCDatosCotizacion = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.TpVehiculo = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.CmbCilindraje = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -48,7 +48,8 @@ namespace PresentacionGui
             this.label7 = new System.Windows.Forms.Label();
             this.CmbModelo = new System.Windows.Forms.ComboBox();
             this.CmbMarca = new System.Windows.Forms.ComboBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.TpServicio = new System.Windows.Forms.TabPage();
+            this.BtnDiagnosticarFalla = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.BtnCambioBateria = new System.Windows.Forms.Button();
             this.BtnAmortiguadores = new System.Windows.Forms.Button();
@@ -79,7 +80,7 @@ namespace PresentacionGui
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.TpAgenda = new System.Windows.Forms.TabPage();
             this.ComboHora = new System.Windows.Forms.ComboBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label17 = new System.Windows.Forms.Label();
@@ -88,7 +89,23 @@ namespace PresentacionGui
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.TpContacto = new System.Windows.Forms.TabPage();
+            this.BtnBuscarContacto = new System.Windows.Forms.Button();
+            this.BtnFinalizarAgenda = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -97,28 +114,16 @@ namespace PresentacionGui
             this.ColEscaner = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColImporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.BtnFinalizarAgenda = new System.Windows.Forms.Button();
+            this.BtnSiguiente = new System.Windows.Forms.Button();
+            this.PnlDiagnosticar = new System.Windows.Forms.Panel();
+            this.BtnVolver = new System.Windows.Forms.Button();
             this.TCDatosCotizacion.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.TpVehiculo.SuspendLayout();
+            this.TpServicio.SuspendLayout();
+            this.TpAgenda.SuspendLayout();
+            this.TpContacto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.PnlDiagnosticar.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnCancelar
@@ -160,7 +165,7 @@ namespace PresentacionGui
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(319, 12);
+            this.label2.Location = new System.Drawing.Point(350, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(145, 16);
             this.label2.TabIndex = 2;
@@ -172,7 +177,7 @@ namespace PresentacionGui
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(148, 59);
+            this.label3.Location = new System.Drawing.Point(213, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 16);
             this.label3.TabIndex = 3;
@@ -180,6 +185,7 @@ namespace PresentacionGui
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -216,40 +222,39 @@ namespace PresentacionGui
             // 
             // TCDatosCotizacion
             // 
-            this.TCDatosCotizacion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TCDatosCotizacion.Controls.Add(this.tabPage1);
-            this.TCDatosCotizacion.Controls.Add(this.tabPage2);
-            this.TCDatosCotizacion.Controls.Add(this.tabPage3);
-            this.TCDatosCotizacion.Controls.Add(this.tabPage4);
+            this.TCDatosCotizacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TCDatosCotizacion.Controls.Add(this.TpVehiculo);
+            this.TCDatosCotizacion.Controls.Add(this.TpServicio);
+            this.TCDatosCotizacion.Controls.Add(this.TpAgenda);
+            this.TCDatosCotizacion.Controls.Add(this.TpContacto);
             this.TCDatosCotizacion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TCDatosCotizacion.Location = new System.Drawing.Point(39, 33);
             this.TCDatosCotizacion.Name = "TCDatosCotizacion";
             this.TCDatosCotizacion.SelectedIndex = 0;
-            this.TCDatosCotizacion.Size = new System.Drawing.Size(736, 785);
+            this.TCDatosCotizacion.Size = new System.Drawing.Size(886, 785);
             this.TCDatosCotizacion.TabIndex = 7;
             // 
-            // tabPage1
+            // TpVehiculo
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.CmbCilindraje);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.CmbYear);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.CmbModelo);
-            this.tabPage1.Controls.Add(this.CmbMarca);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.ForeColor = System.Drawing.Color.Indigo;
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(728, 756);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "VEHICULO";
+            this.TpVehiculo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.TpVehiculo.Controls.Add(this.label9);
+            this.TpVehiculo.Controls.Add(this.CmbCilindraje);
+            this.TpVehiculo.Controls.Add(this.label8);
+            this.TpVehiculo.Controls.Add(this.CmbYear);
+            this.TpVehiculo.Controls.Add(this.label7);
+            this.TpVehiculo.Controls.Add(this.CmbModelo);
+            this.TpVehiculo.Controls.Add(this.CmbMarca);
+            this.TpVehiculo.Controls.Add(this.label2);
+            this.TpVehiculo.Controls.Add(this.label3);
+            this.TpVehiculo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TpVehiculo.ForeColor = System.Drawing.Color.Indigo;
+            this.TpVehiculo.Location = new System.Drawing.Point(4, 25);
+            this.TpVehiculo.Name = "TpVehiculo";
+            this.TpVehiculo.Padding = new System.Windows.Forms.Padding(3);
+            this.TpVehiculo.Size = new System.Drawing.Size(878, 756);
+            this.TpVehiculo.TabIndex = 0;
+            this.TpVehiculo.Text = "VEHICULO";
             // 
             // label9
             // 
@@ -257,7 +262,7 @@ namespace PresentacionGui
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DimGray;
-            this.label9.Location = new System.Drawing.Point(126, 230);
+            this.label9.Location = new System.Drawing.Point(191, 292);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 16);
             this.label9.TabIndex = 10;
@@ -292,7 +297,7 @@ namespace PresentacionGui
             "",
             "",
             ""});
-            this.CmbCilindraje.Location = new System.Drawing.Point(225, 227);
+            this.CmbCilindraje.Location = new System.Drawing.Point(290, 289);
             this.CmbCilindraje.Name = "CmbCilindraje";
             this.CmbCilindraje.Size = new System.Drawing.Size(317, 25);
             this.CmbCilindraje.TabIndex = 9;
@@ -303,7 +308,7 @@ namespace PresentacionGui
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(165, 176);
+            this.label8.Location = new System.Drawing.Point(230, 238);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(34, 16);
             this.label8.TabIndex = 8;
@@ -338,7 +343,7 @@ namespace PresentacionGui
             "",
             "",
             ""});
-            this.CmbYear.Location = new System.Drawing.Point(225, 167);
+            this.CmbYear.Location = new System.Drawing.Point(290, 229);
             this.CmbYear.Name = "CmbYear";
             this.CmbYear.Size = new System.Drawing.Size(317, 25);
             this.CmbYear.TabIndex = 7;
@@ -349,7 +354,7 @@ namespace PresentacionGui
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DimGray;
-            this.label7.Location = new System.Drawing.Point(142, 114);
+            this.label7.Location = new System.Drawing.Point(207, 176);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 16);
             this.label7.TabIndex = 6;
@@ -384,7 +389,7 @@ namespace PresentacionGui
             "",
             "",
             ""});
-            this.CmbModelo.Location = new System.Drawing.Point(225, 111);
+            this.CmbModelo.Location = new System.Drawing.Point(290, 173);
             this.CmbModelo.Name = "CmbModelo";
             this.CmbModelo.Size = new System.Drawing.Size(317, 25);
             this.CmbModelo.TabIndex = 5;
@@ -418,50 +423,73 @@ namespace PresentacionGui
             "",
             "",
             ""});
-            this.CmbMarca.Location = new System.Drawing.Point(225, 59);
+            this.CmbMarca.Location = new System.Drawing.Point(290, 118);
             this.CmbMarca.Name = "CmbMarca";
             this.CmbMarca.Size = new System.Drawing.Size(317, 25);
             this.CmbMarca.TabIndex = 4;
             // 
-            // tabPage2
+            // TpServicio
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Controls.Add(this.BtnCambioBateria);
-            this.tabPage2.Controls.Add(this.BtnAmortiguadores);
-            this.tabPage2.Controls.Add(this.BtnPastillasFrenos);
-            this.tabPage2.Controls.Add(this.BtnKitEmbrague);
-            this.tabPage2.Controls.Add(this.BtnCorreaReparticion);
-            this.tabPage2.Controls.Add(this.BtnDiscosFrenos);
-            this.tabPage2.Controls.Add(this.BtnSincronizacion);
-            this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.BtnRevisionBateria);
-            this.tabPage2.Controls.Add(this.BtnRevisionKilometraje);
-            this.tabPage2.Controls.Add(this.BtnPeritajes);
-            this.tabPage2.Controls.Add(this.BtnServicioEscaner);
-            this.tabPage2.Controls.Add(this.BtnRevisionSuspencion);
-            this.tabPage2.Controls.Add(this.BtnRevisionFrenos);
-            this.tabPage2.Controls.Add(this.BtnRevisionGeneral);
-            this.tabPage2.Controls.Add(this.BtnLiquidoRefrigerante);
-            this.tabPage2.Controls.Add(this.BtnLiquidoFrenos);
-            this.tabPage2.Controls.Add(this.BtnAireAcondicionado);
-            this.tabPage2.Controls.Add(this.BtnCambioPlumillas);
-            this.tabPage2.Controls.Add(this.BtnCambioLlanta);
-            this.tabPage2.Controls.Add(this.BtnAlineacionBalanceo);
-            this.tabPage2.Controls.Add(this.BtnLatoneriaPintura);
-            this.tabPage2.Controls.Add(this.BtnCambioAceite);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.shapeContainer1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(728, 756);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "SERVICIO";
+            this.TpServicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.TpServicio.Controls.Add(this.BtnDiagnosticarFalla);
+            this.TpServicio.Controls.Add(this.label12);
+            this.TpServicio.Controls.Add(this.BtnCambioBateria);
+            this.TpServicio.Controls.Add(this.BtnAmortiguadores);
+            this.TpServicio.Controls.Add(this.BtnPastillasFrenos);
+            this.TpServicio.Controls.Add(this.BtnKitEmbrague);
+            this.TpServicio.Controls.Add(this.BtnCorreaReparticion);
+            this.TpServicio.Controls.Add(this.BtnDiscosFrenos);
+            this.TpServicio.Controls.Add(this.BtnSincronizacion);
+            this.TpServicio.Controls.Add(this.label11);
+            this.TpServicio.Controls.Add(this.label10);
+            this.TpServicio.Controls.Add(this.BtnRevisionBateria);
+            this.TpServicio.Controls.Add(this.BtnRevisionKilometraje);
+            this.TpServicio.Controls.Add(this.BtnPeritajes);
+            this.TpServicio.Controls.Add(this.BtnServicioEscaner);
+            this.TpServicio.Controls.Add(this.BtnRevisionSuspencion);
+            this.TpServicio.Controls.Add(this.BtnRevisionFrenos);
+            this.TpServicio.Controls.Add(this.BtnRevisionGeneral);
+            this.TpServicio.Controls.Add(this.BtnLiquidoRefrigerante);
+            this.TpServicio.Controls.Add(this.BtnLiquidoFrenos);
+            this.TpServicio.Controls.Add(this.BtnAireAcondicionado);
+            this.TpServicio.Controls.Add(this.BtnCambioPlumillas);
+            this.TpServicio.Controls.Add(this.BtnCambioLlanta);
+            this.TpServicio.Controls.Add(this.BtnAlineacionBalanceo);
+            this.TpServicio.Controls.Add(this.BtnLatoneriaPintura);
+            this.TpServicio.Controls.Add(this.BtnCambioAceite);
+            this.TpServicio.Controls.Add(this.label4);
+            this.TpServicio.Controls.Add(this.shapeContainer1);
+            this.TpServicio.Location = new System.Drawing.Point(4, 25);
+            this.TpServicio.Name = "TpServicio";
+            this.TpServicio.Padding = new System.Windows.Forms.Padding(3);
+            this.TpServicio.Size = new System.Drawing.Size(878, 756);
+            this.TpServicio.TabIndex = 1;
+            this.TpServicio.Text = "SERVICIO";
+            this.TpServicio.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // BtnDiagnosticarFalla
+            // 
+            this.BtnDiagnosticarFalla.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnDiagnosticarFalla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnDiagnosticarFalla.FlatAppearance.BorderSize = 0;
+            this.BtnDiagnosticarFalla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDiagnosticarFalla.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDiagnosticarFalla.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnDiagnosticarFalla.Image = ((System.Drawing.Image)(resources.GetObject("BtnDiagnosticarFalla.Image")));
+            this.BtnDiagnosticarFalla.Location = new System.Drawing.Point(724, 16);
+            this.BtnDiagnosticarFalla.Name = "BtnDiagnosticarFalla";
+            this.BtnDiagnosticarFalla.Size = new System.Drawing.Size(148, 97);
+            this.BtnDiagnosticarFalla.TabIndex = 33;
+            this.BtnDiagnosticarFalla.Text = "Si no sabe donde se presenta la falla Clilc Aqui";
+            this.BtnDiagnosticarFalla.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnDiagnosticarFalla.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnDiagnosticarFalla.UseVisualStyleBackColor = false;
+            this.BtnDiagnosticarFalla.Click += new System.EventHandler(this.BtnDiagnosticarFalla_Click_1);
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label12.AutoSize = true;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -608,6 +636,7 @@ namespace PresentacionGui
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -620,6 +649,7 @@ namespace PresentacionGui
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -921,7 +951,7 @@ namespace PresentacionGui
             this.lineShape2,
             this.lineShape3,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(722, 750);
+            this.shapeContainer1.Size = new System.Drawing.Size(872, 750);
             this.shapeContainer1.TabIndex = 9;
             this.shapeContainer1.TabStop = false;
             // 
@@ -938,6 +968,7 @@ namespace PresentacionGui
             // 
             // lineShape2
             // 
+            this.lineShape2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
             this.lineShape2.Enabled = false;
             this.lineShape2.Name = "lineShape2";
@@ -949,6 +980,7 @@ namespace PresentacionGui
             // 
             // lineShape3
             // 
+            this.lineShape3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lineShape3.BorderColor = System.Drawing.Color.DimGray;
             this.lineShape3.Enabled = false;
             this.lineShape3.Name = "lineShape3";
@@ -960,6 +992,7 @@ namespace PresentacionGui
             // 
             // lineShape1
             // 
+            this.lineShape1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lineShape1.BorderColor = System.Drawing.Color.DimGray;
             this.lineShape1.Enabled = false;
             this.lineShape1.Name = "lineShape1";
@@ -969,27 +1002,28 @@ namespace PresentacionGui
             this.lineShape1.Y2 = 265;
             this.lineShape1.Click += new System.EventHandler(this.lineShape1_Click);
             // 
-            // tabPage3
+            // TpAgenda
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.tabPage3.Controls.Add(this.ComboHora);
-            this.tabPage3.Controls.Add(this.monthCalendar1);
-            this.tabPage3.Controls.Add(this.label17);
-            this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.button4);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.button2);
-            this.tabPage3.Controls.Add(this.label5);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage3.Size = new System.Drawing.Size(728, 756);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "AGENDA";
+            this.TpAgenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.TpAgenda.Controls.Add(this.ComboHora);
+            this.TpAgenda.Controls.Add(this.monthCalendar1);
+            this.TpAgenda.Controls.Add(this.label17);
+            this.TpAgenda.Controls.Add(this.label16);
+            this.TpAgenda.Controls.Add(this.label15);
+            this.TpAgenda.Controls.Add(this.button4);
+            this.TpAgenda.Controls.Add(this.button3);
+            this.TpAgenda.Controls.Add(this.button2);
+            this.TpAgenda.Controls.Add(this.label5);
+            this.TpAgenda.Location = new System.Drawing.Point(4, 25);
+            this.TpAgenda.Name = "TpAgenda";
+            this.TpAgenda.Padding = new System.Windows.Forms.Padding(3);
+            this.TpAgenda.Size = new System.Drawing.Size(878, 756);
+            this.TpAgenda.TabIndex = 2;
+            this.TpAgenda.Text = "AGENDA";
             // 
             // ComboHora
             // 
+            this.ComboHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ComboHora.BackColor = System.Drawing.Color.Indigo;
             this.ComboHora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboHora.ForeColor = System.Drawing.Color.DimGray;
@@ -1017,7 +1051,7 @@ namespace PresentacionGui
             "",
             "",
             ""});
-            this.ComboHora.Location = new System.Drawing.Point(153, 536);
+            this.ComboHora.Location = new System.Drawing.Point(153, 573);
             this.ComboHora.Name = "ComboHora";
             this.ComboHora.Size = new System.Drawing.Size(246, 24);
             this.ComboHora.TabIndex = 52;
@@ -1026,17 +1060,18 @@ namespace PresentacionGui
             // 
             this.monthCalendar1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.monthCalendar1.Location = new System.Drawing.Point(153, 132);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 51;
             // 
             // label17
             // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label17.AutoSize = true;
             this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.DimGray;
-            this.label17.Location = new System.Drawing.Point(87, 540);
+            this.label17.Location = new System.Drawing.Point(87, 577);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(46, 16);
             this.label17.TabIndex = 50;
@@ -1122,149 +1157,126 @@ namespace PresentacionGui
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // tabPage4
+            // TpContacto
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.tabPage4.Controls.Add(this.BtnFinalizarAgenda);
-            this.tabPage4.Controls.Add(this.dateTimePicker1);
-            this.tabPage4.Controls.Add(this.textBox8);
-            this.tabPage4.Controls.Add(this.label24);
-            this.tabPage4.Controls.Add(this.textBox7);
-            this.tabPage4.Controls.Add(this.label23);
-            this.tabPage4.Controls.Add(this.textBox5);
-            this.tabPage4.Controls.Add(this.textBox3);
-            this.tabPage4.Controls.Add(this.textBox2);
-            this.tabPage4.Controls.Add(this.textBox6);
-            this.tabPage4.Controls.Add(this.label18);
-            this.tabPage4.Controls.Add(this.label19);
-            this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Controls.Add(this.label21);
-            this.tabPage4.Controls.Add(this.label22);
-            this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(728, 756);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "CONTACTO";
+            this.TpContacto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.TpContacto.Controls.Add(this.BtnBuscarContacto);
+            this.TpContacto.Controls.Add(this.BtnFinalizarAgenda);
+            this.TpContacto.Controls.Add(this.dateTimePicker1);
+            this.TpContacto.Controls.Add(this.textBox8);
+            this.TpContacto.Controls.Add(this.label24);
+            this.TpContacto.Controls.Add(this.textBox7);
+            this.TpContacto.Controls.Add(this.label23);
+            this.TpContacto.Controls.Add(this.textBox5);
+            this.TpContacto.Controls.Add(this.textBox3);
+            this.TpContacto.Controls.Add(this.textBox2);
+            this.TpContacto.Controls.Add(this.textBox6);
+            this.TpContacto.Controls.Add(this.label18);
+            this.TpContacto.Controls.Add(this.label19);
+            this.TpContacto.Controls.Add(this.label20);
+            this.TpContacto.Controls.Add(this.label21);
+            this.TpContacto.Controls.Add(this.label22);
+            this.TpContacto.Controls.Add(this.label6);
+            this.TpContacto.Location = new System.Drawing.Point(4, 25);
+            this.TpContacto.Name = "TpContacto";
+            this.TpContacto.Size = new System.Drawing.Size(878, 756);
+            this.TpContacto.TabIndex = 3;
+            this.TpContacto.Text = "CONTACTO";
             // 
-            // textBox1
+            // BtnBuscarContacto
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(991, 429);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(289, 20);
-            this.textBox1.TabIndex = 9;
+            this.BtnBuscarContacto.AllowDrop = true;
+            this.BtnBuscarContacto.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnBuscarContacto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnBuscarContacto.FlatAppearance.BorderSize = 0;
+            this.BtnBuscarContacto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBuscarContacto.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscarContacto.ForeColor = System.Drawing.Color.Indigo;
+            this.BtnBuscarContacto.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscarContacto.Image")));
+            this.BtnBuscarContacto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnBuscarContacto.Location = new System.Drawing.Point(122, 129);
+            this.BtnBuscarContacto.Name = "BtnBuscarContacto";
+            this.BtnBuscarContacto.Size = new System.Drawing.Size(84, 31);
+            this.BtnBuscarContacto.TabIndex = 74;
+            this.BtnBuscarContacto.Tag = "";
+            this.BtnBuscarContacto.Text = "Buscar";
+            this.BtnBuscarContacto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBuscarContacto.UseVisualStyleBackColor = false;
             // 
-            // label13
+            // BtnFinalizarAgenda
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(1083, 388);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 16);
-            this.label13.TabIndex = 33;
-            this.label13.Text = "TOTAL COTIZADO";
+            this.BtnFinalizarAgenda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnFinalizarAgenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnFinalizarAgenda.FlatAppearance.BorderSize = 0;
+            this.BtnFinalizarAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFinalizarAgenda.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFinalizarAgenda.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnFinalizarAgenda.Image = ((System.Drawing.Image)(resources.GetObject("BtnFinalizarAgenda.Image")));
+            this.BtnFinalizarAgenda.Location = new System.Drawing.Point(188, 653);
+            this.BtnFinalizarAgenda.Name = "BtnFinalizarAgenda";
+            this.BtnFinalizarAgenda.Size = new System.Drawing.Size(338, 55);
+            this.BtnFinalizarAgenda.TabIndex = 73;
+            this.BtnFinalizarAgenda.Text = "FINALIZAR COTIZACION";
+            this.BtnFinalizarAgenda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnFinalizarAgenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnFinalizarAgenda.UseVisualStyleBackColor = false;
             // 
-            // label14
+            // dateTimePicker1
             // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(1066, 59);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(154, 16);
-            this.label14.TabIndex = 34;
-            this.label14.Text = "SERVICIOS COTIZADOS";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(252, 302);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.TabIndex = 72;
             // 
-            // dataGridView1
+            // textBox8
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Indigo;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColTipo,
-            this.ColEscaner,
-            this.ColCantidad,
-            this.ColImporte});
-            this.dataGridView1.GridColor = System.Drawing.Color.Indigo;
-            this.dataGridView1.Location = new System.Drawing.Point(887, 122);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(448, 169);
-            this.dataGridView1.TabIndex = 46;
+            this.textBox8.Location = new System.Drawing.Point(227, 486);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(225, 23);
+            this.textBox8.TabIndex = 71;
             // 
-            // ColTipo
+            // label24
             // 
-            this.ColTipo.HeaderText = "TIPO";
-            this.ColTipo.MinimumWidth = 6;
-            this.ColTipo.Name = "ColTipo";
-            this.ColTipo.ReadOnly = true;
-            this.ColTipo.Width = 58;
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.DimGray;
+            this.label24.Location = new System.Drawing.Point(494, 486);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(47, 17);
+            this.label24.TabIndex = 70;
+            this.label24.Text = "E mail";
             // 
-            // ColEscaner
+            // textBox7
             // 
-            this.ColEscaner.HeaderText = "ESCANER";
-            this.ColEscaner.MinimumWidth = 6;
-            this.ColEscaner.Name = "ColEscaner";
-            this.ColEscaner.ReadOnly = true;
-            this.ColEscaner.Width = 85;
+            this.textBox7.Location = new System.Drawing.Point(227, 421);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(225, 23);
+            this.textBox7.TabIndex = 69;
             // 
-            // ColCantidad
+            // label23
             // 
-            this.ColCantidad.HeaderText = "CANTIDAD";
-            this.ColCantidad.MinimumWidth = 6;
-            this.ColCantidad.Name = "ColCantidad";
-            this.ColCantidad.ReadOnly = true;
-            this.ColCantidad.Width = 93;
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.DimGray;
+            this.label23.Location = new System.Drawing.Point(494, 421);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(62, 17);
+            this.label23.TabIndex = 68;
+            this.label23.Text = "Telefono";
             // 
-            // ColImporte
+            // textBox5
             // 
-            this.ColImporte.HeaderText = "IMPORTE";
-            this.ColImporte.MinimumWidth = 6;
-            this.ColImporte.Name = "ColImporte";
-            this.ColImporte.ReadOnly = true;
-            this.ColImporte.Width = 82;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Indigo;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(808, 763);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 55);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "SIGUIENTE";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.textBox5.Location = new System.Drawing.Point(227, 359);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(225, 23);
+            this.textBox5.TabIndex = 67;
             // 
             // textBox3
             // 
@@ -1287,6 +1299,20 @@ namespace PresentacionGui
             this.textBox6.Size = new System.Drawing.Size(225, 23);
             this.textBox6.TabIndex = 63;
             // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.AutoSize = true;
+            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.DimGray;
+            this.label18.Location = new System.Drawing.Point(494, 359);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(69, 17);
+            this.label18.TabIndex = 62;
+            this.label18.Text = "Direccion";
+            // 
             // label19
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1294,7 +1320,7 @@ namespace PresentacionGui
             this.label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.Location = new System.Drawing.Point(457, 302);
+            this.label19.Location = new System.Drawing.Point(494, 302);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(127, 17);
@@ -1308,7 +1334,7 @@ namespace PresentacionGui
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.DimGray;
-            this.label20.Location = new System.Drawing.Point(457, 245);
+            this.label20.Location = new System.Drawing.Point(494, 245);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(61, 17);
@@ -1322,7 +1348,7 @@ namespace PresentacionGui
             this.label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label21.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.DimGray;
-            this.label21.Location = new System.Drawing.Point(457, 187);
+            this.label21.Location = new System.Drawing.Point(494, 187);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(61, 17);
@@ -1336,101 +1362,161 @@ namespace PresentacionGui
             this.label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label22.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DimGray;
-            this.label22.Location = new System.Drawing.Point(457, 133);
+            this.label22.Location = new System.Drawing.Point(494, 133);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(96, 17);
             this.label22.TabIndex = 58;
             this.label22.Text = "Identificacion";
             // 
-            // label18
+            // textBox1
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.DimGray;
-            this.label18.Location = new System.Drawing.Point(457, 359);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(69, 17);
-            this.label18.TabIndex = 62;
-            this.label18.Text = "Direccion";
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(1056, 431);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(289, 20);
+            this.textBox1.TabIndex = 9;
             // 
-            // textBox5
+            // label13
             // 
-            this.textBox5.Location = new System.Drawing.Point(227, 359);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(225, 23);
-            this.textBox5.TabIndex = 67;
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.DimGray;
+            this.label13.Location = new System.Drawing.Point(1148, 390);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(119, 16);
+            this.label13.TabIndex = 33;
+            this.label13.Text = "TOTAL COTIZADO";
             // 
-            // textBox7
+            // label14
             // 
-            this.textBox7.Location = new System.Drawing.Point(227, 421);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(225, 23);
-            this.textBox7.TabIndex = 69;
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.DimGray;
+            this.label14.Location = new System.Drawing.Point(1131, 61);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(154, 16);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "SERVICIOS COTIZADOS";
             // 
-            // label23
+            // dataGridView1
             // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.DimGray;
-            this.label23.Location = new System.Drawing.Point(457, 421);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(62, 17);
-            this.label23.TabIndex = 68;
-            this.label23.Text = "Telefono";
+            this.dataGridView1.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Indigo;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColTipo,
+            this.ColEscaner,
+            this.ColCantidad,
+            this.ColImporte});
+            this.dataGridView1.GridColor = System.Drawing.Color.Indigo;
+            this.dataGridView1.Location = new System.Drawing.Point(969, 99);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(448, 169);
+            this.dataGridView1.TabIndex = 46;
             // 
-            // textBox8
+            // ColTipo
             // 
-            this.textBox8.Location = new System.Drawing.Point(227, 486);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(225, 23);
-            this.textBox8.TabIndex = 71;
+            this.ColTipo.HeaderText = "TIPO";
+            this.ColTipo.MinimumWidth = 6;
+            this.ColTipo.Name = "ColTipo";
+            this.ColTipo.ReadOnly = true;
             // 
-            // label24
+            // ColEscaner
             // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label24.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.DimGray;
-            this.label24.Location = new System.Drawing.Point(457, 486);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(47, 17);
-            this.label24.TabIndex = 70;
-            this.label24.Text = "E mail";
+            this.ColEscaner.HeaderText = "ESCANER";
+            this.ColEscaner.MinimumWidth = 6;
+            this.ColEscaner.Name = "ColEscaner";
+            this.ColEscaner.ReadOnly = true;
             // 
-            // dateTimePicker1
+            // ColCantidad
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(252, 302);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 72;
+            this.ColCantidad.HeaderText = "CANTIDAD";
+            this.ColCantidad.MinimumWidth = 6;
+            this.ColCantidad.Name = "ColCantidad";
+            this.ColCantidad.ReadOnly = true;
             // 
-            // BtnFinalizarAgenda
+            // ColImporte
             // 
-            this.BtnFinalizarAgenda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnFinalizarAgenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.BtnFinalizarAgenda.FlatAppearance.BorderSize = 0;
-            this.BtnFinalizarAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFinalizarAgenda.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFinalizarAgenda.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnFinalizarAgenda.Image = ((System.Drawing.Image)(resources.GetObject("BtnFinalizarAgenda.Image")));
-            this.BtnFinalizarAgenda.Location = new System.Drawing.Point(188, 653);
-            this.BtnFinalizarAgenda.Name = "BtnFinalizarAgenda";
-            this.BtnFinalizarAgenda.Size = new System.Drawing.Size(338, 55);
-            this.BtnFinalizarAgenda.TabIndex = 73;
-            this.BtnFinalizarAgenda.Text = "FINALIZAR COTIZACION";
-            this.BtnFinalizarAgenda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnFinalizarAgenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnFinalizarAgenda.UseVisualStyleBackColor = false;
+            this.ColImporte.HeaderText = "IMPORTE";
+            this.ColImporte.MinimumWidth = 6;
+            this.ColImporte.Name = "ColImporte";
+            this.ColImporte.ReadOnly = true;
+            // 
+            // BtnSiguiente
+            // 
+            this.BtnSiguiente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnSiguiente.FlatAppearance.BorderSize = 0;
+            this.BtnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSiguiente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSiguiente.ForeColor = System.Drawing.Color.Indigo;
+            this.BtnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("BtnSiguiente.Image")));
+            this.BtnSiguiente.Location = new System.Drawing.Point(943, 763);
+            this.BtnSiguiente.Name = "BtnSiguiente";
+            this.BtnSiguiente.Size = new System.Drawing.Size(161, 55);
+            this.BtnSiguiente.TabIndex = 48;
+            this.BtnSiguiente.Text = "SIGUIENTE";
+            this.BtnSiguiente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnSiguiente.UseVisualStyleBackColor = false;
+            this.BtnSiguiente.Click += new System.EventHandler(this.BtnSiguiente_Click);
+            // 
+            // PnlDiagnosticar
+            // 
+            this.PnlDiagnosticar.Controls.Add(this.BtnVolver);
+            this.PnlDiagnosticar.Controls.Add(this.dataGridView1);
+            this.PnlDiagnosticar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlDiagnosticar.Location = new System.Drawing.Point(0, 0);
+            this.PnlDiagnosticar.Name = "PnlDiagnosticar";
+            this.PnlDiagnosticar.Size = new System.Drawing.Size(1455, 877);
+            this.PnlDiagnosticar.TabIndex = 49;
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BtnVolver.FlatAppearance.BorderSize = 0;
+            this.BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVolver.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVolver.ForeColor = System.Drawing.Color.Indigo;
+            this.BtnVolver.Image = ((System.Drawing.Image)(resources.GetObject("BtnVolver.Image")));
+            this.BtnVolver.Location = new System.Drawing.Point(677, 819);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(161, 55);
+            this.BtnVolver.TabIndex = 50;
+            this.BtnVolver.Text = "VOLVER";
+            this.BtnVolver.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnVolver.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnVolver.UseVisualStyleBackColor = false;
+            this.BtnVolver.Visible = false;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
             // 
             // FrmCotizacion
             // 
@@ -1439,27 +1525,28 @@ namespace PresentacionGui
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(1455, 877);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.BtnSiguiente);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TCDatosCotizacion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnCancelar);
+            this.Controls.Add(this.PnlDiagnosticar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCotizacion";
             this.Text = "FrmCotizacion";
             this.TCDatosCotizacion.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.TpVehiculo.ResumeLayout(false);
+            this.TpVehiculo.PerformLayout();
+            this.TpServicio.ResumeLayout(false);
+            this.TpServicio.PerformLayout();
+            this.TpAgenda.ResumeLayout(false);
+            this.TpAgenda.PerformLayout();
+            this.TpContacto.ResumeLayout(false);
+            this.TpContacto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.PnlDiagnosticar.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1475,10 +1562,10 @@ namespace PresentacionGui
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabControl TCDatosCotizacion;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage TpVehiculo;
+        private System.Windows.Forms.TabPage TpServicio;
+        private System.Windows.Forms.TabPage TpAgenda;
+        private System.Windows.Forms.TabPage TpContacto;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox CmbCilindraje;
         private System.Windows.Forms.Label label8;
@@ -1524,7 +1611,7 @@ namespace PresentacionGui
         private System.Windows.Forms.DataGridViewTextBoxColumn ColEscaner;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColImporte;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnSiguiente;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -1548,5 +1635,9 @@ namespace PresentacionGui
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Button BtnDiagnosticarFalla;
+        private System.Windows.Forms.Panel PnlDiagnosticar;
+        private System.Windows.Forms.Button BtnVolver;
+        private System.Windows.Forms.Button BtnBuscarContacto;
     }
 }

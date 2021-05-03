@@ -16,5 +16,16 @@ namespace PresentacionGui
         {
             InitializeComponent();
         }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

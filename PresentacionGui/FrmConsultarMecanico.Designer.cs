@@ -34,15 +34,15 @@ namespace PresentacionGui
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColEscaner = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColImporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.ColTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColEscaner = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColImporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +77,7 @@ namespace PresentacionGui
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -100,34 +100,6 @@ namespace PresentacionGui
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(778, 225);
             this.dataGridView1.TabIndex = 50;
-            // 
-            // ColTipo
-            // 
-            this.ColTipo.HeaderText = "TIPO";
-            this.ColTipo.Name = "ColTipo";
-            this.ColTipo.ReadOnly = true;
-            this.ColTipo.Width = 58;
-            // 
-            // ColEscaner
-            // 
-            this.ColEscaner.HeaderText = "ESCANER";
-            this.ColEscaner.Name = "ColEscaner";
-            this.ColEscaner.ReadOnly = true;
-            this.ColEscaner.Width = 85;
-            // 
-            // ColCantidad
-            // 
-            this.ColCantidad.HeaderText = "CANTIDAD";
-            this.ColCantidad.Name = "ColCantidad";
-            this.ColCantidad.ReadOnly = true;
-            this.ColCantidad.Width = 93;
-            // 
-            // ColImporte
-            // 
-            this.ColImporte.HeaderText = "IMPORTE";
-            this.ColImporte.Name = "ColImporte";
-            this.ColImporte.ReadOnly = true;
-            this.ColImporte.Width = 82;
             // 
             // label1
             // 
@@ -167,13 +139,17 @@ namespace PresentacionGui
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(378, 9);
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.Location = new System.Drawing.Point(320, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 16);
+            this.label2.Size = new System.Drawing.Size(241, 25);
             this.label2.TabIndex = 57;
-            this.label2.Text = "REGISTRO DE MECANICO";
+            this.label2.Tag = "";
+            this.label2.Text = "MENCANICOS              ";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
@@ -192,6 +168,30 @@ namespace PresentacionGui
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // ColTipo
+            // 
+            this.ColTipo.HeaderText = "ID";
+            this.ColTipo.Name = "ColTipo";
+            this.ColTipo.ReadOnly = true;
+            // 
+            // ColEscaner
+            // 
+            this.ColEscaner.HeaderText = "NOMBRE";
+            this.ColEscaner.Name = "ColEscaner";
+            this.ColEscaner.ReadOnly = true;
+            // 
+            // ColCantidad
+            // 
+            this.ColCantidad.HeaderText = "ESTADO";
+            this.ColCantidad.Name = "ColCantidad";
+            this.ColCantidad.ReadOnly = true;
+            // 
+            // ColImporte
+            // 
+            this.ColImporte.HeaderText = "CANTIDAD";
+            this.ColImporte.Name = "ColImporte";
+            this.ColImporte.ReadOnly = true;
             // 
             // FrmConsultarMecanico
             // 
@@ -219,14 +219,14 @@ namespace PresentacionGui
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColTipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColEscaner;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColCantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColImporte;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColTipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColEscaner;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColCantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColImporte;
     }
 }

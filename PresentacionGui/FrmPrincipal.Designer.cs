@@ -54,8 +54,6 @@ namespace PresentacionGui
             this.BtnConsultarMecanico = new System.Windows.Forms.Button();
             this.BtnMecanico = new System.Windows.Forms.Button();
             this.PnlDiagnostico = new System.Windows.Forms.Panel();
-            this.BtnRegistrarDiagnostico = new System.Windows.Forms.Button();
-            this.BtnAsignarDiagnostico = new System.Windows.Forms.Button();
             this.BtnConsultarDiagnostico = new System.Windows.Forms.Button();
             this.BtnDiagnostico = new System.Windows.Forms.Button();
             this.PnlAgenda = new System.Windows.Forms.Panel();
@@ -112,7 +110,7 @@ namespace PresentacionGui
             this.PnlSuperior.ForeColor = System.Drawing.SystemColors.ControlText;
             this.PnlSuperior.Location = new System.Drawing.Point(0, 0);
             this.PnlSuperior.Name = "PnlSuperior";
-            this.PnlSuperior.Size = new System.Drawing.Size(1048, 40);
+            this.PnlSuperior.Size = new System.Drawing.Size(1750, 40);
             this.PnlSuperior.TabIndex = 1;
             this.PnlSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlSuperior_Paint);
             this.PnlSuperior.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PnlSuperior_MouseMove);
@@ -121,7 +119,7 @@ namespace PresentacionGui
             // 
             this.BtnPbxMinimizar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnPbxMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxMinimizar.Image")));
-            this.BtnPbxMinimizar.Location = new System.Drawing.Point(933, 6);
+            this.BtnPbxMinimizar.Location = new System.Drawing.Point(1635, 6);
             this.BtnPbxMinimizar.Margin = new System.Windows.Forms.Padding(0);
             this.BtnPbxMinimizar.Name = "BtnPbxMinimizar";
             this.BtnPbxMinimizar.Size = new System.Drawing.Size(28, 28);
@@ -136,7 +134,7 @@ namespace PresentacionGui
             // 
             this.BtnPbxRestaurar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnPbxRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxRestaurar.Image")));
-            this.BtnPbxRestaurar.Location = new System.Drawing.Point(971, 6);
+            this.BtnPbxRestaurar.Location = new System.Drawing.Point(1673, 6);
             this.BtnPbxRestaurar.Margin = new System.Windows.Forms.Padding(0);
             this.BtnPbxRestaurar.Name = "BtnPbxRestaurar";
             this.BtnPbxRestaurar.Size = new System.Drawing.Size(28, 28);
@@ -150,7 +148,7 @@ namespace PresentacionGui
             // 
             this.BtnPbxMaximizar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnPbxMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxMaximizar.Image")));
-            this.BtnPbxMaximizar.Location = new System.Drawing.Point(971, 6);
+            this.BtnPbxMaximizar.Location = new System.Drawing.Point(1673, 6);
             this.BtnPbxMaximizar.Margin = new System.Windows.Forms.Padding(0);
             this.BtnPbxMaximizar.Name = "BtnPbxMaximizar";
             this.BtnPbxMaximizar.Size = new System.Drawing.Size(28, 28);
@@ -163,7 +161,7 @@ namespace PresentacionGui
             // 
             this.BtnPbxCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnPbxCerrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPbxCerrar.Image")));
-            this.BtnPbxCerrar.Location = new System.Drawing.Point(1011, 6);
+            this.BtnPbxCerrar.Location = new System.Drawing.Point(1713, 6);
             this.BtnPbxCerrar.Margin = new System.Windows.Forms.Padding(0);
             this.BtnPbxCerrar.Name = "BtnPbxCerrar";
             this.BtnPbxCerrar.Size = new System.Drawing.Size(28, 28);
@@ -181,7 +179,7 @@ namespace PresentacionGui
             this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContenedor.Location = new System.Drawing.Point(0, 0);
             this.PnlContenedor.Name = "PnlContenedor";
-            this.PnlContenedor.Size = new System.Drawing.Size(1048, 894);
+            this.PnlContenedor.Size = new System.Drawing.Size(1750, 960);
             this.PnlContenedor.TabIndex = 2;
             this.PnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlContenedor_Paint);
             // 
@@ -202,120 +200,142 @@ namespace PresentacionGui
             this.PnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlPrincipal.Location = new System.Drawing.Point(189, 40);
             this.PnlPrincipal.Name = "PnlPrincipal";
-            this.PnlPrincipal.Size = new System.Drawing.Size(859, 854);
+            this.PnlPrincipal.Size = new System.Drawing.Size(1561, 920);
             this.PnlPrincipal.TabIndex = 0;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Indigo;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label1.Location = new System.Drawing.Point(134, 489);
+            this.label1.Location = new System.Drawing.Point(546, 398);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 77);
+            this.label1.Size = new System.Drawing.Size(321, 112);
             this.label1.TabIndex = 9;
             this.label1.Text = "TOTAL";
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Indigo;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label4.Location = new System.Drawing.Point(29, 270);
+            this.label4.Location = new System.Drawing.Point(26, 398);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(321, 77);
+            this.label4.Size = new System.Drawing.Size(480, 112);
             this.label4.TabIndex = 5;
             this.label4.Text = "SERVICIO";
             // 
             // pictureBox10
             // 
+            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(481, 495);
+            this.pictureBox10.Location = new System.Drawing.Point(1058, 495);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox10.Size = new System.Drawing.Size(64, 147);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox10.TabIndex = 8;
             this.pictureBox10.TabStop = false;
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(565, 578);
+            this.pictureBox9.Location = new System.Drawing.Point(1175, 578);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox9.Size = new System.Drawing.Size(64, 147);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox9.TabIndex = 7;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(725, 745);
+            this.pictureBox8.Location = new System.Drawing.Point(1389, 745);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox8.Size = new System.Drawing.Size(64, 147);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox8.TabIndex = 6;
             this.pictureBox8.TabStop = false;
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(646, 666);
+            this.pictureBox7.Location = new System.Drawing.Point(1281, 666);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox7.Size = new System.Drawing.Size(64, 147);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox7.TabIndex = 5;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(725, 40);
+            this.pictureBox6.Location = new System.Drawing.Point(1389, 40);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(85, 78);
+            this.pictureBox6.Size = new System.Drawing.Size(85, 161);
             this.pictureBox6.TabIndex = 4;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(344, 360);
+            this.pictureBox5.Location = new System.Drawing.Point(893, 350);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(119, 126);
+            this.pictureBox5.Size = new System.Drawing.Size(135, 120);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 3;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(481, 294);
+            this.pictureBox4.Location = new System.Drawing.Point(1058, 294);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox4.Size = new System.Drawing.Size(64, 147);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(565, 215);
+            this.pictureBox3.Location = new System.Drawing.Point(1175, 215);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox3.Size = new System.Drawing.Size(64, 147);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(646, 134);
+            this.pictureBox2.Location = new System.Drawing.Point(1281, 134);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(64, 147);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -340,7 +360,7 @@ namespace PresentacionGui
             this.PnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlMenu.Location = new System.Drawing.Point(0, 40);
             this.PnlMenu.Name = "PnlMenu";
-            this.PnlMenu.Size = new System.Drawing.Size(189, 854);
+            this.PnlMenu.Size = new System.Drawing.Size(189, 920);
             this.PnlMenu.TabIndex = 0;
             // 
             // PnlMecanico
@@ -349,9 +369,9 @@ namespace PresentacionGui
             this.PnlMecanico.Controls.Add(this.BtnRegistrarMecanico);
             this.PnlMecanico.Controls.Add(this.BtnConsultarMecanico);
             this.PnlMecanico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlMecanico.Location = new System.Drawing.Point(0, 839);
+            this.PnlMecanico.Location = new System.Drawing.Point(0, 706);
             this.PnlMecanico.Name = "PnlMecanico";
-            this.PnlMecanico.Size = new System.Drawing.Size(172, 140);
+            this.PnlMecanico.Size = new System.Drawing.Size(189, 88);
             this.PnlMecanico.TabIndex = 11;
             // 
             // BtnRegistrarMecanico
@@ -364,7 +384,7 @@ namespace PresentacionGui
             this.BtnRegistrarMecanico.Location = new System.Drawing.Point(0, 38);
             this.BtnRegistrarMecanico.Name = "BtnRegistrarMecanico";
             this.BtnRegistrarMecanico.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnRegistrarMecanico.Size = new System.Drawing.Size(172, 38);
+            this.BtnRegistrarMecanico.Size = new System.Drawing.Size(189, 38);
             this.BtnRegistrarMecanico.TabIndex = 2;
             this.BtnRegistrarMecanico.Text = "Registrar";
             this.BtnRegistrarMecanico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -380,7 +400,7 @@ namespace PresentacionGui
             this.BtnConsultarMecanico.Location = new System.Drawing.Point(0, 0);
             this.BtnConsultarMecanico.Name = "BtnConsultarMecanico";
             this.BtnConsultarMecanico.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnConsultarMecanico.Size = new System.Drawing.Size(172, 38);
+            this.BtnConsultarMecanico.Size = new System.Drawing.Size(189, 38);
             this.BtnConsultarMecanico.TabIndex = 0;
             this.BtnConsultarMecanico.Text = "Consultar";
             this.BtnConsultarMecanico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -396,10 +416,12 @@ namespace PresentacionGui
             this.BtnMecanico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMecanico.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMecanico.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnMecanico.Location = new System.Drawing.Point(0, 794);
+            this.BtnMecanico.Image = ((System.Drawing.Image)(resources.GetObject("BtnMecanico.Image")));
+            this.BtnMecanico.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnMecanico.Location = new System.Drawing.Point(0, 661);
             this.BtnMecanico.Name = "BtnMecanico";
             this.BtnMecanico.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnMecanico.Size = new System.Drawing.Size(172, 45);
+            this.BtnMecanico.Size = new System.Drawing.Size(189, 45);
             this.BtnMecanico.TabIndex = 10;
             this.BtnMecanico.Text = "Mecanico";
             this.BtnMecanico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -409,47 +431,12 @@ namespace PresentacionGui
             // PnlDiagnostico
             // 
             this.PnlDiagnostico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.PnlDiagnostico.Controls.Add(this.BtnRegistrarDiagnostico);
-            this.PnlDiagnostico.Controls.Add(this.BtnAsignarDiagnostico);
             this.PnlDiagnostico.Controls.Add(this.BtnConsultarDiagnostico);
             this.PnlDiagnostico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlDiagnostico.Location = new System.Drawing.Point(0, 654);
+            this.PnlDiagnostico.Location = new System.Drawing.Point(0, 605);
             this.PnlDiagnostico.Name = "PnlDiagnostico";
-            this.PnlDiagnostico.Size = new System.Drawing.Size(172, 140);
+            this.PnlDiagnostico.Size = new System.Drawing.Size(189, 56);
             this.PnlDiagnostico.TabIndex = 9;
-            // 
-            // BtnRegistrarDiagnostico
-            // 
-            this.BtnRegistrarDiagnostico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnRegistrarDiagnostico.FlatAppearance.BorderSize = 0;
-            this.BtnRegistrarDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRegistrarDiagnostico.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegistrarDiagnostico.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnRegistrarDiagnostico.Location = new System.Drawing.Point(0, 76);
-            this.BtnRegistrarDiagnostico.Name = "BtnRegistrarDiagnostico";
-            this.BtnRegistrarDiagnostico.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnRegistrarDiagnostico.Size = new System.Drawing.Size(172, 38);
-            this.BtnRegistrarDiagnostico.TabIndex = 2;
-            this.BtnRegistrarDiagnostico.Text = "Registrar";
-            this.BtnRegistrarDiagnostico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnRegistrarDiagnostico.UseVisualStyleBackColor = true;
-            this.BtnRegistrarDiagnostico.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // BtnAsignarDiagnostico
-            // 
-            this.BtnAsignarDiagnostico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnAsignarDiagnostico.FlatAppearance.BorderSize = 0;
-            this.BtnAsignarDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAsignarDiagnostico.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAsignarDiagnostico.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnAsignarDiagnostico.Location = new System.Drawing.Point(0, 38);
-            this.BtnAsignarDiagnostico.Name = "BtnAsignarDiagnostico";
-            this.BtnAsignarDiagnostico.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnAsignarDiagnostico.Size = new System.Drawing.Size(172, 38);
-            this.BtnAsignarDiagnostico.TabIndex = 1;
-            this.BtnAsignarDiagnostico.Text = "Asignar";
-            this.BtnAsignarDiagnostico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAsignarDiagnostico.UseVisualStyleBackColor = true;
             // 
             // BtnConsultarDiagnostico
             // 
@@ -461,7 +448,7 @@ namespace PresentacionGui
             this.BtnConsultarDiagnostico.Location = new System.Drawing.Point(0, 0);
             this.BtnConsultarDiagnostico.Name = "BtnConsultarDiagnostico";
             this.BtnConsultarDiagnostico.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnConsultarDiagnostico.Size = new System.Drawing.Size(172, 38);
+            this.BtnConsultarDiagnostico.Size = new System.Drawing.Size(189, 38);
             this.BtnConsultarDiagnostico.TabIndex = 0;
             this.BtnConsultarDiagnostico.Text = "Consultar";
             this.BtnConsultarDiagnostico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -477,10 +464,12 @@ namespace PresentacionGui
             this.BtnDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDiagnostico.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDiagnostico.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnDiagnostico.Location = new System.Drawing.Point(0, 609);
+            this.BtnDiagnostico.Image = ((System.Drawing.Image)(resources.GetObject("BtnDiagnostico.Image")));
+            this.BtnDiagnostico.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnDiagnostico.Location = new System.Drawing.Point(0, 560);
             this.BtnDiagnostico.Name = "BtnDiagnostico";
             this.BtnDiagnostico.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnDiagnostico.Size = new System.Drawing.Size(172, 45);
+            this.BtnDiagnostico.Size = new System.Drawing.Size(189, 45);
             this.BtnDiagnostico.TabIndex = 8;
             this.BtnDiagnostico.Text = "Diagnostico";
             this.BtnDiagnostico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -492,9 +481,9 @@ namespace PresentacionGui
             this.PnlAgenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.PnlAgenda.Controls.Add(this.BtnConsultarAgenda);
             this.PnlAgenda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlAgenda.Location = new System.Drawing.Point(0, 559);
+            this.PnlAgenda.Location = new System.Drawing.Point(0, 510);
             this.PnlAgenda.Name = "PnlAgenda";
-            this.PnlAgenda.Size = new System.Drawing.Size(172, 50);
+            this.PnlAgenda.Size = new System.Drawing.Size(189, 50);
             this.PnlAgenda.TabIndex = 7;
             // 
             // BtnConsultarAgenda
@@ -507,7 +496,7 @@ namespace PresentacionGui
             this.BtnConsultarAgenda.Location = new System.Drawing.Point(0, 0);
             this.BtnConsultarAgenda.Name = "BtnConsultarAgenda";
             this.BtnConsultarAgenda.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnConsultarAgenda.Size = new System.Drawing.Size(172, 38);
+            this.BtnConsultarAgenda.Size = new System.Drawing.Size(189, 38);
             this.BtnConsultarAgenda.TabIndex = 0;
             this.BtnConsultarAgenda.Text = "Consultar";
             this.BtnConsultarAgenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -523,10 +512,12 @@ namespace PresentacionGui
             this.BtnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgenda.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgenda.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnAgenda.Location = new System.Drawing.Point(0, 514);
+            this.BtnAgenda.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgenda.Image")));
+            this.BtnAgenda.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgenda.Location = new System.Drawing.Point(0, 465);
             this.BtnAgenda.Name = "BtnAgenda";
             this.BtnAgenda.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnAgenda.Size = new System.Drawing.Size(172, 45);
+            this.BtnAgenda.Size = new System.Drawing.Size(189, 45);
             this.BtnAgenda.TabIndex = 6;
             this.BtnAgenda.Text = "Agenda";
             this.BtnAgenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -538,10 +529,11 @@ namespace PresentacionGui
             this.PnlPiesas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.PnlPiesas.Controls.Add(this.BtnConsultarRepuesto);
             this.PnlPiesas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlPiesas.Location = new System.Drawing.Point(0, 464);
+            this.PnlPiesas.Location = new System.Drawing.Point(0, 415);
             this.PnlPiesas.Name = "PnlPiesas";
-            this.PnlPiesas.Size = new System.Drawing.Size(172, 50);
+            this.PnlPiesas.Size = new System.Drawing.Size(189, 50);
             this.PnlPiesas.TabIndex = 5;
+            this.PnlPiesas.Visible = false;
             // 
             // BtnConsultarRepuesto
             // 
@@ -553,7 +545,7 @@ namespace PresentacionGui
             this.BtnConsultarRepuesto.Location = new System.Drawing.Point(0, 0);
             this.BtnConsultarRepuesto.Name = "BtnConsultarRepuesto";
             this.BtnConsultarRepuesto.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnConsultarRepuesto.Size = new System.Drawing.Size(172, 38);
+            this.BtnConsultarRepuesto.Size = new System.Drawing.Size(189, 38);
             this.BtnConsultarRepuesto.TabIndex = 0;
             this.BtnConsultarRepuesto.Text = "Consultar";
             this.BtnConsultarRepuesto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -568,14 +560,17 @@ namespace PresentacionGui
             this.BtnRespuestos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRespuestos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRespuestos.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnRespuestos.Location = new System.Drawing.Point(0, 419);
+            this.BtnRespuestos.Image = ((System.Drawing.Image)(resources.GetObject("BtnRespuestos.Image")));
+            this.BtnRespuestos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnRespuestos.Location = new System.Drawing.Point(0, 370);
             this.BtnRespuestos.Name = "BtnRespuestos";
             this.BtnRespuestos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnRespuestos.Size = new System.Drawing.Size(172, 45);
+            this.BtnRespuestos.Size = new System.Drawing.Size(189, 45);
             this.BtnRespuestos.TabIndex = 4;
             this.BtnRespuestos.Text = "Respuestos";
             this.BtnRespuestos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnRespuestos.UseVisualStyleBackColor = true;
+            this.BtnRespuestos.Visible = false;
             this.BtnRespuestos.Click += new System.EventHandler(this.BtnPiesas_Click);
             // 
             // PnlBtnGestionServicio
@@ -584,9 +579,9 @@ namespace PresentacionGui
             this.PnlBtnGestionServicio.Controls.Add(this.button3);
             this.PnlBtnGestionServicio.Controls.Add(this.BtnConsultar);
             this.PnlBtnGestionServicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlBtnGestionServicio.Location = new System.Drawing.Point(0, 294);
+            this.PnlBtnGestionServicio.Location = new System.Drawing.Point(0, 290);
             this.PnlBtnGestionServicio.Name = "PnlBtnGestionServicio";
-            this.PnlBtnGestionServicio.Size = new System.Drawing.Size(172, 125);
+            this.PnlBtnGestionServicio.Size = new System.Drawing.Size(189, 80);
             this.PnlBtnGestionServicio.TabIndex = 3;
             this.PnlBtnGestionServicio.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlBtnGestionServicio_Paint);
             // 
@@ -600,7 +595,7 @@ namespace PresentacionGui
             this.button3.Location = new System.Drawing.Point(0, 38);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(172, 38);
+            this.button3.Size = new System.Drawing.Size(189, 38);
             this.button3.TabIndex = 1;
             this.button3.Text = "Facturar";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -617,11 +612,12 @@ namespace PresentacionGui
             this.BtnConsultar.Location = new System.Drawing.Point(0, 0);
             this.BtnConsultar.Name = "BtnConsultar";
             this.BtnConsultar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnConsultar.Size = new System.Drawing.Size(172, 38);
+            this.BtnConsultar.Size = new System.Drawing.Size(189, 38);
             this.BtnConsultar.TabIndex = 0;
             this.BtnConsultar.Text = "Consultar";
             this.BtnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnConsultar.UseVisualStyleBackColor = true;
+            this.BtnConsultar.Visible = false;
             this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
             // BtnGestionServicio
@@ -633,10 +629,12 @@ namespace PresentacionGui
             this.BtnGestionServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGestionServicio.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGestionServicio.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnGestionServicio.Location = new System.Drawing.Point(0, 249);
+            this.BtnGestionServicio.Image = ((System.Drawing.Image)(resources.GetObject("BtnGestionServicio.Image")));
+            this.BtnGestionServicio.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnGestionServicio.Location = new System.Drawing.Point(0, 245);
             this.BtnGestionServicio.Name = "BtnGestionServicio";
             this.BtnGestionServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnGestionServicio.Size = new System.Drawing.Size(172, 45);
+            this.BtnGestionServicio.Size = new System.Drawing.Size(189, 45);
             this.BtnGestionServicio.TabIndex = 3;
             this.BtnGestionServicio.Text = "Servicio";
             this.BtnGestionServicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -650,7 +648,7 @@ namespace PresentacionGui
             this.PnlBtnGestionarCotizacion.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlBtnGestionarCotizacion.Location = new System.Drawing.Point(0, 198);
             this.PnlBtnGestionarCotizacion.Name = "PnlBtnGestionarCotizacion";
-            this.PnlBtnGestionarCotizacion.Size = new System.Drawing.Size(172, 51);
+            this.PnlBtnGestionarCotizacion.Size = new System.Drawing.Size(189, 47);
             this.PnlBtnGestionarCotizacion.TabIndex = 2;
             // 
             // BtnCotizar
@@ -665,7 +663,7 @@ namespace PresentacionGui
             this.BtnCotizar.Location = new System.Drawing.Point(0, 0);
             this.BtnCotizar.Name = "BtnCotizar";
             this.BtnCotizar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnCotizar.Size = new System.Drawing.Size(172, 38);
+            this.BtnCotizar.Size = new System.Drawing.Size(189, 38);
             this.BtnCotizar.TabIndex = 0;
             this.BtnCotizar.Text = "Agregar Cotizacion";
             this.BtnCotizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -681,10 +679,12 @@ namespace PresentacionGui
             this.BtnCotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCotizacion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCotizacion.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnCotizacion.Image = ((System.Drawing.Image)(resources.GetObject("BtnCotizacion.Image")));
+            this.BtnCotizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCotizacion.Location = new System.Drawing.Point(0, 153);
             this.BtnCotizacion.Name = "BtnCotizacion";
             this.BtnCotizacion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnCotizacion.Size = new System.Drawing.Size(172, 45);
+            this.BtnCotizacion.Size = new System.Drawing.Size(189, 45);
             this.BtnCotizacion.TabIndex = 0;
             this.BtnCotizacion.Text = "Cotizacion";
             this.BtnCotizacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -698,7 +698,7 @@ namespace PresentacionGui
             this.PnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlLogo.Location = new System.Drawing.Point(0, 0);
             this.PnlLogo.Name = "PnlLogo";
-            this.PnlLogo.Size = new System.Drawing.Size(172, 153);
+            this.PnlLogo.Size = new System.Drawing.Size(189, 153);
             this.PnlLogo.TabIndex = 1;
             // 
             // label2
@@ -708,7 +708,7 @@ namespace PresentacionGui
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label2.Location = new System.Drawing.Point(27, 107);
+            this.label2.Location = new System.Drawing.Point(27, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 38);
             this.label2.TabIndex = 10;
@@ -728,7 +728,7 @@ namespace PresentacionGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 894);
+            this.ClientSize = new System.Drawing.Size(1750, 960);
             this.Controls.Add(this.PnlContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(700, 350);
@@ -791,8 +791,6 @@ namespace PresentacionGui
         private System.Windows.Forms.Button BtnAgenda;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel PnlDiagnostico;
-        private System.Windows.Forms.Button BtnRegistrarDiagnostico;
-        private System.Windows.Forms.Button BtnAsignarDiagnostico;
         private System.Windows.Forms.Button BtnConsultarDiagnostico;
         private System.Windows.Forms.Button BtnDiagnostico;
         private System.Windows.Forms.Panel PnlMecanico;

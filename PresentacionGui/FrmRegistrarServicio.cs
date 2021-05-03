@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace PresentacionGui
 {
-    public partial class FrmDiagnostico : Form
+    public partial class FrmRegistrarServicio : Form
     {
-        public FrmDiagnostico()
+        public FrmRegistrarServicio()
         {
             InitializeComponent();
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
