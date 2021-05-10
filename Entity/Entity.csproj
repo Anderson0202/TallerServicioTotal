@@ -47,6 +47,7 @@
     <Compile Include="Cotizacion.cs" />
     <Compile Include="DetalleCotizacion.cs" />
     <Compile Include="DetalleFactura.cs" />
+    <Compile Include="Diagnostico.cs" />
     <Compile Include="Factura.cs" />
     <Compile Include="Mecanico.cs" />
     <Compile Include="Persona.cs" />
